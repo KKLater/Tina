@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Tina-Demo-macos/Pods-Tina-Demo-macos-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire-macOS/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Tina-macOS/Tina.framework

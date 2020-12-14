@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+
+
+project 'Tina-Demo.xcodeproj'
+
+target 'Tina-Demo' do
+  use_frameworks!
+  platform :ios, '10.0'
+  pod 'Tina', :path => '../'
+end
+
+target 'Tina-Demo-macos' do
+  use_frameworks!
+  platform :osx, '10.12'
+  pod 'Tina', :path => '../'
+end
+
+target 'Tina-Demo-tvos' do
+  use_frameworks!
+  platform :tvos, '10.10'
+  pod 'Tina', :path => '../'
+end
+
+target 'Tina-Demo-watchos' do
+  use_frameworks!
+  platform :watchos, '3.0'
+  pod 'Tina', :path => '../'
+end

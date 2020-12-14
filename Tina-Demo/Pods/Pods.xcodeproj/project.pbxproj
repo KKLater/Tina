@@ -1,0 +1,2848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005E4CD746376E07E95D05310B14EFCC /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA759B0F4631F85245EC184123BA1763 /* MultipartUpload.swift */; };
+		0074B50E1293D4350F50BDB3B149D0AE /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2990FFC671C480D9ABA2C4F3E63866 /* ServerTrustEvaluation.swift */; };
+		021CFFF4D370467ADB1E5B72ED35A426 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B376F525FA86EB346F398511FDBAF /* URLConvertible+URLRequestConvertible.swift */; };
+		040BD86850CAB9ED5F160C9D3F934F75 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78224A6584E4C77ADA08D3358E9184 /* HTTPMethod.swift */; };
+		048D35008FF806E66A6A3E1776F60A77 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07A9B9AE8F3EB5405F7616E2914ABE /* Validation.swift */; };
+		060CC0F0C40104A002A1340280CFF0D2 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70079FB2D978CA1538CD9513E07CFB /* RequestTaskMap.swift */; };
+		0626BDB37864D645428A02F6A698EC79 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29432508719A237448013EE6CF330184 /* Method.swift */; };
+		0698C7160BD2D591C033F1BF8776440A /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6904D29E5C2627B19D3CEA902CE10A1 /* RedirectHandler.swift */; };
+		06B74D7DAAABB1D39E5250DBC743C2CC /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E85ADE575997E172B2C5F7F90701A /* Notifications.swift */; };
+		0807A42F36E6D16E2D26E6211638479A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A78847E34C550BFBADB6A6690618E8F /* Request.swift */; };
+		08088078FB32AABDB6D555914BABF3E3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F918E762C7358D18A2BEA514504714 /* Session.swift */; };
+		088D0AE060872BE907946BAAB3BA1841 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDD540A5DE65C2E8B861CAAE0E2167 /* RetryPolicy.swift */; };
+		089CD00BB5F3610EAD2B6ACF555EA886 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF10027B980CBD34D9D66833695DC81 /* URLRequest+Alamofire.swift */; };
+		08E9854BD88EB4BFFB15B13A77A689B9 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF88913342EA8E2DC2610D600EBE34CC /* Parameters.swift */; };
+		09DB77871372A1CCE03BD15138E96795 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A35DE7C1B8F0E8BC63152B8924D301 /* Cocoa.framework */; };
+		0A3F05816BFAB9C4F82D85E4CF977097 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E19AE029507723EF27CB5AB46DEA57 /* Response.swift */; };
+		0D88495DEDF9EAE6B71B14EA7BB86641 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D250770BDFEBE49F68E45CA4396197 /* Request.swift */; };
+		0DCD3EC0C9D64532EBFE999D9D623527 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E85ADE575997E172B2C5F7F90701A /* Notifications.swift */; };
+		0EE90A1107404F58F89FA6DCF3C84453 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545CA2E13E981B59248EA50CE2677504 /* CachedResponseHandler.swift */; };
+		0F3A23CAB21C57E10916DBAA9BFC9D8D /* Pods-Tina-Demo-macos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B1B201E6E8FF2EDAB1A4D9C7C03C70 /* Pods-Tina-Demo-macos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FF61CFA3A1773FA0691A466CB028102 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DAC2584CC21474F5CB9AFA785AF23B /* SessionDelegate.swift */; };
+		10D1B2EA4185F0BB9C5F94FDFD9E77D6 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF10027B980CBD34D9D66833695DC81 /* URLRequest+Alamofire.swift */; };
+		10F69629388A847FE7985C6DFB07CA41 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBF4149EFBF8D5A34C67B55EBCBBB0F /* NetworkReachabilityManager.swift */; };
+		116661A446066178C22D37120FA18703 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288796B12085368D369047F4EDC42754 /* EventMonitor.swift */; };
+		11827E4C1704C75C724D26BDDB2D00F8 /* Alamofire-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B49D1C01F1F813EDE96691A93F94EC7 /* Alamofire-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12AB7D64B187A897E07EA9056B386446 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A78847E34C550BFBADB6A6690618E8F /* Request.swift */; };
+		12B2C88E3B75FE39CD5E1F7DB6EDCC8D /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4BA168A2E6BFF162602EED8184A6AB /* AlamofireExtended.swift */; };
+		1357A2B3700493DDFEE8097C5D84AAA2 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288796B12085368D369047F4EDC42754 /* EventMonitor.swift */; };
+		1380680CC41ED45A65143B005920951E /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAB1EF2C311C4119F3DA5E019CC060 /* Combine.swift */; };
+		16E4D2ABAFBDFCDB3E19175AB21285CF /* JSONable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB13DC435FF11A470F3B350BEC1FBE7 /* JSONable.swift */; };
+		1AE7BF4AE162BCDFCD3994EAA8D29A43 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F273C5FB910AE7B13D39A01A951ECC5 /* Response.swift */; };
+		1B7D549F9AAC047F6C9CA5C22E16C677 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C527CB50D034115707B7AC3881D2F /* Protected.swift */; };
+		1C0B3A82CB83B39CE66607C96868E458 /* Pods-Tina-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCBCF5753E5A9368ED08013618DE2EB9 /* Pods-Tina-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E42C2A764F15F9FAE944FC116B7AFF1 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAB1EF2C311C4119F3DA5E019CC060 /* Combine.swift */; };
+		1EA6897FAECFE380E40D7D23C1FDF228 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B1439E22C5A203B71F806CB43DA3E /* ParameterEncoding.swift */; };
+		1F08C4EC2933F35D68829535B78595ED /* Tina-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A668E7159DE37647D8DEDFBB72469FE /* Tina-macOS-dummy.m */; };
+		2055536D92B7B482ABD9BC4FB80F8327 /* Tina-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87578383597E910D532C04D16E6D0DE2 /* Tina-iOS-dummy.m */; };
+		22100167967112DDCBD78B2592D27127 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522912B311FB78D8554A6985312FC73 /* MultipartFormData.swift */; };
+		224A3831D5F30306D63490D3AAC5EB72 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07089A2C76151A0939E602FCD5F893 /* AFError.swift */; };
+		227E12B0725AEB031D6CAF2F6245B3CB /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2990FFC671C480D9ABA2C4F3E63866 /* ServerTrustEvaluation.swift */; };
+		2286144F235F66AC2ED13065E9F7C38D /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAB1EF2C311C4119F3DA5E019CC060 /* Combine.swift */; };
+		2326DF70B8D418AE1095B06FF3084862 /* Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8D5FF53AE39EA96B273E4B9690443E /* Handle.swift */; };
+		24FB756DFF4459E44D221D56BD37BE65 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6904D29E5C2627B19D3CEA902CE10A1 /* RedirectHandler.swift */; };
+		27E65BED135F5EF5C74CBB7B517D4CA9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E19AE029507723EF27CB5AB46DEA57 /* Response.swift */; };
+		27F18112BA67F0F0E978878B179FD01A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78224A6584E4C77ADA08D3358E9184 /* HTTPMethod.swift */; };
+		2A68D12D903A8670C8C41EA4D03F462F /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28921DF53BC050CBE727FB56C70D19E8 /* URLEncodedFormEncoder.swift */; };
+		2A7922E04F7296BF94CCE9B461031AF5 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA08BEE29AAB1D0AAB08A61A5AAD847 /* DispatchQueue+Alamofire.swift */; };
+		2C4B3C583C5F55B029D86C108C3145BD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A35DE7C1B8F0E8BC63152B8924D301 /* Cocoa.framework */; };
+		2ED48B0DE55B1A3EC0965DA85017E397 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591EE4321DDFF9CAF5BDA05FBB48F379 /* Foundation.framework */; };
+		2FFE383C3E95432678909247F7CE0B0C /* Pods-Tina-Demo-watchos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5BE43D7A71DFD6B7CE6920228C646F /* Pods-Tina-Demo-watchos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3000BC56A245FD0E0A6093569107ACAE /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7B59AE580DEFB588E31C772B6FF03 /* Alamofire.swift */; };
+		30A05C639A06979932525E681C78D2FD /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545CA2E13E981B59248EA50CE2677504 /* CachedResponseHandler.swift */; };
+		3128821B62AAB09D0C6E75FD84B21500 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E46C99AB45B2B24E98FD98B276CD764 /* Foundation.framework */; };
+		334E09394A767283385E78D4543EAFDB /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F99ABFD8F630602C2EF201B5E6772 /* Result+Alamofire.swift */; };
+		35A3B6B55E91C6758E93332A733F0AE1 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF88913342EA8E2DC2610D600EBE34CC /* Parameters.swift */; };
+		35ADBF0C65134E9BFE1D4E96116AA804 /* Alamofire-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46671B2996A6C760B7C444BB390E8637 /* Alamofire-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C911B8A5C6D3AD667FC9C635582F4A /* Tina-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C830BB6C5D23C50648762EA37415E4 /* Tina-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		398AA130556567DCA72B4354545F0C9B /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B376F525FA86EB346F398511FDBAF /* URLConvertible+URLRequestConvertible.swift */; };
+		3BD65D50EDD6454905E31B20D5CF2AD2 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2990FFC671C480D9ABA2C4F3E63866 /* ServerTrustEvaluation.swift */; };
+		3BFD8BE43CDFFE9E40CEEEBDC82A64F9 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDD540A5DE65C2E8B861CAAE0E2167 /* RetryPolicy.swift */; };
+		3C1869CB1C00D2EBDC850F0FBDCF1470 /* Alamofire-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E027F1F93465BD5ADD720B51A1BFCD /* Alamofire-macOS-dummy.m */; };
+		3C234687084EC327A79BAFAAA35F693C /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20303D7609D00FF1AB07D7701068564 /* Error.swift */; };
+		3D4AC9C1B91AA1DC13370581C7938B6A /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29432508719A237448013EE6CF330184 /* Method.swift */; };
+		3D68F65A13564CB33A9D340B8097117C /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DAC2584CC21474F5CB9AFA785AF23B /* SessionDelegate.swift */; };
+		3DC0448F238194FA011B4149992B4782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC5CC672C568C2CCCFA07A7960722F /* Foundation.framework */; };
+		3FBB1018023D4B63EC44067C33DCFB8C /* Tina-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 698AD53978C0EE854BADF37D7589B402 /* Tina-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		402430BDC5C107990D6132EF0B55340E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A35DE7C1B8F0E8BC63152B8924D301 /* Cocoa.framework */; };
+		411F79C81127C78D4411D0CC4DF84301 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482BF5104FD342A9F7406A3C00562ACE /* CFNetwork.framework */; };
+		43A990C0A7AF48551C7C201AE0539E5C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07A9B9AE8F3EB5405F7616E2914ABE /* Validation.swift */; };
+		44B162810AE7981C3AADF2DEF488917A /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70079FB2D978CA1538CD9513E07CFB /* RequestTaskMap.swift */; };
+		4739E108FBD58BE9E845C2F8E75B0011 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF32F4C37A4A6048343850746211246E /* Alamofire.framework */; };
+		486667B05AD4F8E038CC6E40784DF464 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA95AB7A5271C233C0873CD0E1CC6E /* ResponseSerialization.swift */; };
+		4AF828D390AD4F930DAADC9E6F5298C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC5CC672C568C2CCCFA07A7960722F /* Foundation.framework */; };
+		4E72116E296AA94A3112C60EA84D676D /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA759B0F4631F85245EC184123BA1763 /* MultipartUpload.swift */; };
+		4F7272FE26C7366C178849AC6C7DE97B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E85ADE575997E172B2C5F7F90701A /* Notifications.swift */; };
+		4FA8B45D14F6A4EC2624B34EBC2375F8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF32F4C37A4A6048343850746211246E /* Alamofire.framework */; };
+		5031B03E8E3BF0A8E0F5D7DABDF8E833 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78224A6584E4C77ADA08D3358E9184 /* HTTPMethod.swift */; };
+		52300CB17E3A22001BB0C8045B712537 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DA5D3B8A23A82E09E523BE3E36A6B /* Session.swift */; };
+		53C58788F09225E72330A6ABA7D44312 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46835E933BEAB80652E5924E581A6A2F /* URLSessionConfiguration+Alamofire.swift */; };
+		547D548442CB33486ED6B99FE82DC48F /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2990FFC671C480D9ABA2C4F3E63866 /* ServerTrustEvaluation.swift */; };
+		54E7291F587FB9188D83A43EE1B60497 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA95AB7A5271C233C0873CD0E1CC6E /* ResponseSerialization.swift */; };
+		573A893EA99886A94816D29CD97D26EE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07089A2C76151A0939E602FCD5F893 /* AFError.swift */; };
+		5ACE2A2C0B93BB21C4703F48972ABCC7 /* Pods-Tina-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E78B888245FA389D1DBB8AF0C539E /* Pods-Tina-Demo-dummy.m */; };
+		5BAE3F8B34023EA19FF65A288109EBC3 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C391D132FAD38F96B42D421DD6589 /* AuthenticationInterceptor.swift */; };
+		5BBE51F0D19A297632D18C47E0753F31 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA08BEE29AAB1D0AAB08A61A5AAD847 /* DispatchQueue+Alamofire.swift */; };
+		5BC7CBCD2C9E2BC5E8E42632EE2D4254 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28921DF53BC050CBE727FB56C70D19E8 /* URLEncodedFormEncoder.swift */; };
+		5C5E7D90E32B81CE550DC47950FD2766 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683EB8AE4F204753A0AFBBFC4A6B3085 /* RequestInterceptor.swift */; };
+		5C6B4200BEEF51C242A5A0DE7E2A9AA0 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F99ABFD8F630602C2EF201B5E6772 /* Result+Alamofire.swift */; };
+		5D78F1EE170DC51E72116B77CA03A8C5 /* Alamofire-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF400ED9FA98E7B09C4DDF0E8023 /* Alamofire-iOS-dummy.m */; };
+		5F684DE81B91BFFBAFAA4AD3275B24A5 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07089A2C76151A0939E602FCD5F893 /* AFError.swift */; };
+		61648151DF9C949D6399E4ED54528FBA /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07A9B9AE8F3EB5405F7616E2914ABE /* Validation.swift */; };
+		63C62134F77B66F62C7BAB7766377B6C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DA5D3B8A23A82E09E523BE3E36A6B /* Session.swift */; };
+		658CD8202D130A282BEDC1670B30FD2A /* Alamofire-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5573263A98470A7BE38BDC014E06189 /* Alamofire-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6597E4FEF1DCD7A473970E15E5FAA28A /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29432508719A237448013EE6CF330184 /* Method.swift */; };
+		684DCC859A74B67D6DFE235251F023E0 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF10027B980CBD34D9D66833695DC81 /* URLRequest+Alamofire.swift */; };
+		69EE9DA82BA321C75CF0D6A4097ABCEB /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46835E933BEAB80652E5924E581A6A2F /* URLSessionConfiguration+Alamofire.swift */; };
+		6A9CD63B91A5E0E6E8B92D5651877667 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E85ADE575997E172B2C5F7F90701A /* Notifications.swift */; };
+		6AB9CDFE231B8BBE2F7DFAEBDA541A3D /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28921DF53BC050CBE727FB56C70D19E8 /* URLEncodedFormEncoder.swift */; };
+		6B825AB3F4B2EDF9AF19766017C6CFB6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A78847E34C550BFBADB6A6690618E8F /* Request.swift */; };
+		6CB04ADC37190554AF5C0896A03E9DA4 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0314E7F2C91968F892925ABBFBB417B /* OperationQueue+Alamofire.swift */; };
+		6CD4070C59F277D280094569E53AB312 /* Pods-Tina-Demo-tvos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B7D8DBB03D67ECD67F7447027E4E27 /* Pods-Tina-Demo-tvos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CFEC7886E753A29EE7DC007471F156B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA08BEE29AAB1D0AAB08A61A5AAD847 /* DispatchQueue+Alamofire.swift */; };
+		6F754457810637CA11BF12150E05B4AA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D250770BDFEBE49F68E45CA4396197 /* Request.swift */; };
+		70512EC2F5E71E4E146BDFDF763B27BB /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6904D29E5C2627B19D3CEA902CE10A1 /* RedirectHandler.swift */; };
+		71150F9A4C02E3F807060C1687278298 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F273C5FB910AE7B13D39A01A951ECC5 /* Response.swift */; };
+		732B2AA38C6A373847FCC12470CA35AD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F273C5FB910AE7B13D39A01A951ECC5 /* Response.swift */; };
+		734C5A1487F525DFBECDC5B1AAB56455 /* Tina-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F327D5E602E213F4AF58FC2BA2726B5E /* Tina-tvOS-dummy.m */; };
+		754161E7A6222625847E543C2C00DA12 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A07CA80CDE74EA9F51EBE71CABB9B /* Task.swift */; };
+		75584DB8669F284121FBF02C47AFFAAE /* Tina-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABF86ADD29475C4729D971D176DF9CD /* Tina-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75B7B3E189EFF69DDE3EF8C05FE3FB12 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C391D132FAD38F96B42D421DD6589 /* AuthenticationInterceptor.swift */; };
+		76B2E2E1DE70043A0D413F360AB1F069 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF32F4C37A4A6048343850746211246E /* Alamofire.framework */; };
+		76DC2549CA35A4251933432DA3ED4483 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7B59AE580DEFB588E31C772B6FF03 /* Alamofire.swift */; };
+		78410A7DD8442ED62D0C0BC431B63356 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2AC8D041282A7057783766B8FAB732 /* ParameterEncoder.swift */; };
+		78E8F945AA70556B7F3004A3541975C9 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683EB8AE4F204753A0AFBBFC4A6B3085 /* RequestInterceptor.swift */; };
+		7C81FD05845F1A556BC06A1CE075B39E /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B376F525FA86EB346F398511FDBAF /* URLConvertible+URLRequestConvertible.swift */; };
+		7E14F979F478925E2DC1EA87E10FFAAA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E19AE029507723EF27CB5AB46DEA57 /* Response.swift */; };
+		7E2E1993D6140C5F17B485E7AEABA842 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70079FB2D978CA1538CD9513E07CFB /* RequestTaskMap.swift */; };
+		7E8C43EF585915B071A5195C52BC1558 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA95AB7A5271C233C0873CD0E1CC6E /* ResponseSerialization.swift */; };
+		810E58544571CC4962153B84838E345F /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683EB8AE4F204753A0AFBBFC4A6B3085 /* RequestInterceptor.swift */; };
+		8168D0B5C11E20A5E639FC7AE63CB42A /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395B9B2946E6DA4156E6FC92AD7D141 /* HTTPHeaders.swift */; };
+		81FC7B98BC0CDEAF0A781496744C8AF0 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522912B311FB78D8554A6985312FC73 /* MultipartFormData.swift */; };
+		8513B53FD67C5EFBDC8F7B00997097B2 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C527CB50D034115707B7AC3881D2F /* Protected.swift */; };
+		867BA049CC5F8C673CF3DBAB31464FD9 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46835E933BEAB80652E5924E581A6A2F /* URLSessionConfiguration+Alamofire.swift */; };
+		8727E9E6170D542DC4EB3780E2E5E83D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20303D7609D00FF1AB07D7701068564 /* Error.swift */; };
+		87931361B8FD7984470C9E8199ED46F7 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0314E7F2C91968F892925ABBFBB417B /* OperationQueue+Alamofire.swift */; };
+		888B1ED946E10EBA50146E5094C64EF4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E19AE029507723EF27CB5AB46DEA57 /* Response.swift */; };
+		89132847BC6B1A772A6C20BC47D90885 /* Alamofire-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818E30077F0F6A6C46B96171997CA35 /* Alamofire-tvOS-dummy.m */; };
+		8A05914D2AFEE0450E874B47C1AA7F74 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DAC2584CC21474F5CB9AFA785AF23B /* SessionDelegate.swift */; };
+		8D88F7E33EB99B93B9DBFE671E754593 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E46C99AB45B2B24E98FD98B276CD764 /* Foundation.framework */; };
+		8EF87A40E39D44AF006CE7745FE98B68 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CA95AB7A5271C233C0873CD0E1CC6E /* ResponseSerialization.swift */; };
+		8F8122B5355EBB483748741BC9C8948C /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA759B0F4631F85245EC184123BA1763 /* MultipartUpload.swift */; };
+		8F88C773F4BB05C243327EF692EDAD73 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDD540A5DE65C2E8B861CAAE0E2167 /* RetryPolicy.swift */; };
+		92B9C4771DF84ECFBFCF2E9C55C12747 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF32F4C37A4A6048343850746211246E /* Alamofire.framework */; };
+		93860A6C290F24CCF2ECCF51ED82F947 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C527CB50D034115707B7AC3881D2F /* Protected.swift */; };
+		9599E1D0AC10FAFED7166F1B764D98B9 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2AC8D041282A7057783766B8FAB732 /* ParameterEncoder.swift */; };
+		9771944441AABD3198DA905C4860FDC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E46C99AB45B2B24E98FD98B276CD764 /* Foundation.framework */; };
+		9A12F0A305DD81ED9B25273630D1DD04 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4BA168A2E6BFF162602EED8184A6AB /* AlamofireExtended.swift */; };
+		9A71E3E69F8AEDE8E3E7AC631FB11A3D /* Pods-Tina-Demo-macos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F0B4D6A8D9766B660FB7F23DF46950 /* Pods-Tina-Demo-macos-dummy.m */; };
+		9BB8325061C9B917102968FD0EF0A2EB /* Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8D5FF53AE39EA96B273E4B9690443E /* Handle.swift */; };
+		9C922C38CE256A9380238167E8B3E9AE /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0314E7F2C91968F892925ABBFBB417B /* OperationQueue+Alamofire.swift */; };
+		A01DD03E0E6075B10A7EF6C5959E4256 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F99ABFD8F630602C2EF201B5E6772 /* Result+Alamofire.swift */; };
+		A08635D3C2C017FBBFD05BF964966137 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAB1EF2C311C4119F3DA5E019CC060 /* Combine.swift */; };
+		A09674DC285B37679EAEAF2BC75661A8 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C391D132FAD38F96B42D421DD6589 /* AuthenticationInterceptor.swift */; };
+		A17A8905D9B83D3E9D77323161A4EB95 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCC800E56187C5B726B13E922D0196A /* CFNetwork.framework */; };
+		A19765CCD7BBE9321219164B09E89339 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F273C5FB910AE7B13D39A01A951ECC5 /* Response.swift */; };
+		A1DE9592AC5821D1C581FFAB8E29DDCA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A07CA80CDE74EA9F51EBE71CABB9B /* Task.swift */; };
+		A29111C42F3500D184B18C32B1F9C664 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A20A1892976434490432955B8037C52 /* Header.swift */; };
+		A3B3B8B4F67211E494627D1088119A4E /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29432508719A237448013EE6CF330184 /* Method.swift */; };
+		A3CCC64DBE5B60DBEDDE32B130710BCE /* Alamofire-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F136F9A2E90581B3F77B4812A7D0DF76 /* Alamofire-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A467DCFF6B8658AB5196273345667C57 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6904D29E5C2627B19D3CEA902CE10A1 /* RedirectHandler.swift */; };
+		A4A98AD7637C1B9869E8448618789CCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC5CC672C568C2CCCFA07A7960722F /* Foundation.framework */; };
+		A5B5ED01777A8197B865B136C18464EA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D250770BDFEBE49F68E45CA4396197 /* Request.swift */; };
+		A5C4D20A6EAEA6C8E1693620389CFDB2 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288796B12085368D369047F4EDC42754 /* EventMonitor.swift */; };
+		AA1B53D6A0801D9969749110F6EEE67B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D250770BDFEBE49F68E45CA4396197 /* Request.swift */; };
+		AA3A445ABF2633553A833D8759058A7A /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B376F525FA86EB346F398511FDBAF /* URLConvertible+URLRequestConvertible.swift */; };
+		AA8BABB9A5F8A5178688B533C4E3B3AA /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0314E7F2C91968F892925ABBFBB417B /* OperationQueue+Alamofire.swift */; };
+		AAF07CDE26AAA751F47EDD2EC316825D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B1439E22C5A203B71F806CB43DA3E /* ParameterEncoding.swift */; };
+		AC4F4A4FA1DA7CE0D25B284BD593456B /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46835E933BEAB80652E5924E581A6A2F /* URLSessionConfiguration+Alamofire.swift */; };
+		AD69A492821B16CE7869487E4F8A9CCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591EE4321DDFF9CAF5BDA05FBB48F379 /* Foundation.framework */; };
+		AEF01B2AE6A42BD3FF87C977A3BE0E24 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC843F77C4CC50B1EAAFCE5F1EA86F5 /* StringEncoding+Alamofire.swift */; };
+		AF47DB771C350208FC4B9A73987D664F /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C391D132FAD38F96B42D421DD6589 /* AuthenticationInterceptor.swift */; };
+		B170920AC7529C675A23F9B19BD3FE3D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7B59AE580DEFB588E31C772B6FF03 /* Alamofire.swift */; };
+		B264BF709E227BE6B4F3AA5E2B9756B7 /* JSONable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB13DC435FF11A470F3B350BEC1FBE7 /* JSONable.swift */; };
+		B44CF7BC1FA2E090C6C29CE87ED3D45B /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A20A1892976434490432955B8037C52 /* Header.swift */; };
+		B5F0BF45EAF305337B7CC3CB9F825A01 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20303D7609D00FF1AB07D7701068564 /* Error.swift */; };
+		B6431EB8594531AEF1FF701742B9F7E4 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395B9B2946E6DA4156E6FC92AD7D141 /* HTTPHeaders.swift */; };
+		B6844E93B750B2365AB0A123AE3FF4B6 /* Pods-Tina-Demo-tvos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 432C00991F47C236386C5E18C26A3819 /* Pods-Tina-Demo-tvos-dummy.m */; };
+		B6D253C12A036647005A146817A0EBD8 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288796B12085368D369047F4EDC42754 /* EventMonitor.swift */; };
+		B8907E403AA9678A663DE2EF7EFA87C4 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B1439E22C5A203B71F806CB43DA3E /* ParameterEncoding.swift */; };
+		BA0830B717F6D902625D7F161F494C09 /* Tina-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC704A1C3FE901A042D02B04F28FF118 /* Tina-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA26EE3C9EBB8EE7E33DFF6B2DB80193 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B1439E22C5A203B71F806CB43DA3E /* ParameterEncoding.swift */; };
+		BB82110D8113A3AA75C24D4E11D05945 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DAC2584CC21474F5CB9AFA785AF23B /* SessionDelegate.swift */; };
+		BBF2F663E33230AF1478347F0786EABB /* Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8D5FF53AE39EA96B273E4B9690443E /* Handle.swift */; };
+		BC16C5107A9A754DB38763FB41A46DAF /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBF4149EFBF8D5A34C67B55EBCBBB0F /* NetworkReachabilityManager.swift */; };
+		BD41C43E99DEBB31F7A3AE0234489802 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395B9B2946E6DA4156E6FC92AD7D141 /* HTTPHeaders.swift */; };
+		BEB8C91DDE59124052CDCB3F2D824301 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E78224A6584E4C77ADA08D3358E9184 /* HTTPMethod.swift */; };
+		C11BF1565B52B41BCFA933BDB569C48A /* Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8D5FF53AE39EA96B273E4B9690443E /* Handle.swift */; };
+		C1CE41D0D9E62BDC147A9817A4D6A940 /* Tina-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 923627B2E0365F9901A7858E28D68A68 /* Tina-watchOS-dummy.m */; };
+		C27369A5662EB496BE4F3BDDCB21E71E /* Alamofire-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9DB0310110F2107A2965F2F54FD2D0 /* Alamofire-watchOS-dummy.m */; };
+		C33A2068C4278176A7ED847F8C8BA508 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28921DF53BC050CBE727FB56C70D19E8 /* URLEncodedFormEncoder.swift */; };
+		C43F51943E2472620B2D9836AA3C2CF6 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20303D7609D00FF1AB07D7701068564 /* Error.swift */; };
+		C4B1C9CCE109DBC53273C3A5CE492B87 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C527CB50D034115707B7AC3881D2F /* Protected.swift */; };
+		C50096A8822C2F9D174B295A968CFB1C /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522912B311FB78D8554A6985312FC73 /* MultipartFormData.swift */; };
+		C5FC6C58113FBDA0C68BFF38C0CA4234 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7B59AE580DEFB588E31C772B6FF03 /* Alamofire.swift */; };
+		C6194C229E299F4E65B9331379E18930 /* JSONable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB13DC435FF11A470F3B350BEC1FBE7 /* JSONable.swift */; };
+		C696335A73922F2F3C50DCD5BD07FAD0 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC843F77C4CC50B1EAAFCE5F1EA86F5 /* StringEncoding+Alamofire.swift */; };
+		C89D235FBB981097169D9D4752CA103B /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A20A1892976434490432955B8037C52 /* Header.swift */; };
+		C923B66CDF05EC1C323AA6F64F0E7DCE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07089A2C76151A0939E602FCD5F893 /* AFError.swift */; };
+		C966174C73861720023B5E2A98343C72 /* JSONable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB13DC435FF11A470F3B350BEC1FBE7 /* JSONable.swift */; };
+		C98DDF1CE4A4DEE86B9E0AC61ECFFEC9 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70079FB2D978CA1538CD9513E07CFB /* RequestTaskMap.swift */; };
+		CF5605FFD341484A088D7FD6720CC732 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4BA168A2E6BFF162602EED8184A6AB /* AlamofireExtended.swift */; };
+		D27AE7A859C71005D1AB217B869F718F /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A20A1892976434490432955B8037C52 /* Header.swift */; };
+		D52485594D0A1442DED42D3E5B4B5525 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F918E762C7358D18A2BEA514504714 /* Session.swift */; };
+		D58108AC022FDCE975EE2B3C1891AB12 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DDD540A5DE65C2E8B861CAAE0E2167 /* RetryPolicy.swift */; };
+		D59B6A02B2BE66B39633B3F5363B8C31 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA759B0F4631F85245EC184123BA1763 /* MultipartUpload.swift */; };
+		D9543B5E0BE14BEDF4614542B7AD9C31 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2AC8D041282A7057783766B8FAB732 /* ParameterEncoder.swift */; };
+		DAA1252B4DCBE61085911FF1D980D23C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2ABA658FFA3E7EDE11F325A38EBF07 /* CFNetwork.framework */; };
+		DDF5EB3227037853C7EF61AA64FDA954 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683EB8AE4F204753A0AFBBFC4A6B3085 /* RequestInterceptor.swift */; };
+		DE4716AD8E03D2879DD4A0C66CCBCE5E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA08BEE29AAB1D0AAB08A61A5AAD847 /* DispatchQueue+Alamofire.swift */; };
+		DF160BB9EFA0CC8CC10CFEF171533D3E /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF10027B980CBD34D9D66833695DC81 /* URLRequest+Alamofire.swift */; };
+		DFCAFE1AEB89D26EC74B4C2C99F66EEC /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC843F77C4CC50B1EAAFCE5F1EA86F5 /* StringEncoding+Alamofire.swift */; };
+		DFE876556AC9261AE726DCB9D5EFEBDE /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07A9B9AE8F3EB5405F7616E2914ABE /* Validation.swift */; };
+		E089E2C5B2F64AC4441700B9D4E49B84 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A07CA80CDE74EA9F51EBE71CABB9B /* Task.swift */; };
+		E0FD2DDAAD05BB31C2627CDA15C3A758 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F918E762C7358D18A2BEA514504714 /* Session.swift */; };
+		E47BE799D7687B5FC1774932EC69D61C /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8395B9B2946E6DA4156E6FC92AD7D141 /* HTTPHeaders.swift */; };
+		E4902A5468DA23B9F2C0FDCD51321B0C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A07CA80CDE74EA9F51EBE71CABB9B /* Task.swift */; };
+		E5FC0EF1F0CBBE6A74D96889ECE36C6E /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F99ABFD8F630602C2EF201B5E6772 /* Result+Alamofire.swift */; };
+		EA0B79B25792AB0F4A3ADB0DE2501D7B /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545CA2E13E981B59248EA50CE2677504 /* CachedResponseHandler.swift */; };
+		EB442164D75088102C93AC966FFE49EC /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DA5D3B8A23A82E09E523BE3E36A6B /* Session.swift */; };
+		EC82BDF3199B388DF4B4A1AE4F95FC51 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D522912B311FB78D8554A6985312FC73 /* MultipartFormData.swift */; };
+		ECA5B1F0B3C674D9C6D1823B501B7442 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC843F77C4CC50B1EAAFCE5F1EA86F5 /* StringEncoding+Alamofire.swift */; };
+		EEA0A7F9E891BA8AEB2CC058C921FC05 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F918E762C7358D18A2BEA514504714 /* Session.swift */; };
+		EF260FAE1FBF4DBAA8C76FBE04FC6E8B /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF88913342EA8E2DC2610D600EBE34CC /* Parameters.swift */; };
+		EFA869FB5F0371066AC86639473A5CD2 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBF4149EFBF8D5A34C67B55EBCBBB0F /* NetworkReachabilityManager.swift */; };
+		F16CE54BA3EDD30F9E786FB98AE98725 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D900F33325DAC48816A53F0F587C45A /* CFNetwork.framework */; };
+		F224DDED13E6B79697856B01A5453F92 /* Pods-Tina-Demo-watchos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E9A8C2969226B4C82D39C599B469ED /* Pods-Tina-Demo-watchos-dummy.m */; };
+		F32331D203FD7C536F635E8673FE3EC8 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545CA2E13E981B59248EA50CE2677504 /* CachedResponseHandler.swift */; };
+		F54DC4D154001C9F79B8E8CFCA4C51D2 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4BA168A2E6BFF162602EED8184A6AB /* AlamofireExtended.swift */; };
+		F6823FF4E8CA1382CCA95288541AE872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591EE4321DDFF9CAF5BDA05FBB48F379 /* Foundation.framework */; };
+		F6DE63E4A04D8EF320FC04122A104DC7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBF4149EFBF8D5A34C67B55EBCBBB0F /* NetworkReachabilityManager.swift */; };
+		F7B54F15F889CAD34B26D94416DEB3F6 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2AC8D041282A7057783766B8FAB732 /* ParameterEncoder.swift */; };
+		F80921CD503D8E2C76373F9A100EB12E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A78847E34C550BFBADB6A6690618E8F /* Request.swift */; };
+		FA8EA0A76BBF2127F39DD0575026DBB6 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657DA5D3B8A23A82E09E523BE3E36A6B /* Session.swift */; };
+		FE194ED9CFE40A6CB23870ACD0027E72 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF88913342EA8E2DC2610D600EBE34CC /* Parameters.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		098B0A9CDF71BB09CBDCBDD0F453E086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D7BE2D353D1A99CA4BF464A60D2925E;
+			remoteInfo = "Tina-tvOS";
+		};
+		0EA4CAE2AEED02776DC66E249AB62F33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FFBEF6B5886E5A406577C612CBAC293;
+			remoteInfo = "Tina-macOS";
+		};
+		3DE41D2927CB8B2DA5C2B46D6069F087 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4482DB5ECA7D447A5384824BF1CF5903;
+			remoteInfo = "Tina-iOS";
+		};
+		64871CF190EB0946347D3BE1E7719C01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EB38A9BFD3E09D12CCDB0592D081EC4;
+			remoteInfo = "Alamofire-macOS";
+		};
+		6EDE96AC90FCEF2ACDCF50B3B41BB100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD8828BFC368157226E204A32CD5B6DE;
+			remoteInfo = "Alamofire-iOS";
+		};
+		77BAB68D813AFA3C2A09266F3230FAF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54EC3BB400983E17DAE5AC71E88176D2;
+			remoteInfo = "Alamofire-tvOS";
+		};
+		991BFF0917B9FD38110BBEB98C4E35BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F51BC925FD5FB829E8D422C690BDF0;
+			remoteInfo = "Alamofire-watchOS";
+		};
+		A2D75980D229346343A2309DD8D370F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54EC3BB400983E17DAE5AC71E88176D2;
+			remoteInfo = "Alamofire-tvOS";
+		};
+		A7012B8B028D7868D15802BF34974AEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F51BC925FD5FB829E8D422C690BDF0;
+			remoteInfo = "Alamofire-watchOS";
+		};
+		A7804B5A3A8181EE7395EE914288FC60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EB38A9BFD3E09D12CCDB0592D081EC4;
+			remoteInfo = "Alamofire-macOS";
+		};
+		AE00F7C15747DF986699B271DBD51FE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256CDEE3D1CF9CE52D5391B2AAE7E07E;
+			remoteInfo = "Tina-watchOS";
+		};
+		EA8A0647DCB82A2716EE430F60C1EC69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD8828BFC368157226E204A32CD5B6DE;
+			remoteInfo = "Alamofire-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F0B4D6A8D9766B660FB7F23DF46950 /* Pods-Tina-Demo-macos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tina-Demo-macos-dummy.m"; sourceTree = "<group>"; };
+		0383D3B97AC6BE825A06DDCF16C2F174 /* Alamofire-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-prefix.pch"; sourceTree = "<group>"; };
+		0407CF400ED9FA98E7B09C4DDF0E8023 /* Alamofire-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-iOS-dummy.m"; sourceTree = "<group>"; };
+		04DC5CC672C568C2CCCFA07A7960722F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		06F13042732F38A1930A266A9B9F62EA /* Alamofire-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-tvOS-prefix.pch"; path = "../Alamofire-tvOS/Alamofire-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		08016A13A3F6235B07F1BF12786D3C18 /* Alamofire-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-macOS-prefix.pch"; path = "../Alamofire-macOS/Alamofire-macOS-prefix.pch"; sourceTree = "<group>"; };
+		0939DEC55CEBE8830FFDBAEC8CE22B74 /* Tina-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Tina-iOS.modulemap"; sourceTree = "<group>"; };
+		0A9AEAFF8E8164E593BA5859B25A897A /* Alamofire-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Alamofire-macOS.modulemap"; path = "../Alamofire-macOS/Alamofire-macOS.modulemap"; sourceTree = "<group>"; };
+		0B49D1C01F1F813EDE96691A93F94EC7 /* Alamofire-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-tvOS-umbrella.h"; path = "../Alamofire-tvOS/Alamofire-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		0C02FC43AB2B1BEF4D051069B15F08A1 /* Tina-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Tina-macOS-Info.plist"; path = "../Tina-macOS/Tina-macOS-Info.plist"; sourceTree = "<group>"; };
+		0CCE9CB82B4F89C8E07ADCACFD3DB134 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "Alamofire-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D14256E203AD9E8F6E234B2B04373F7 /* Alamofire-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-prefix.pch"; path = "../Alamofire-watchOS/Alamofire-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		0E46C99AB45B2B24E98FD98B276CD764 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0EB13DC435FF11A470F3B350BEC1FBE7 /* JSONable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONable.swift; path = Sources/Tina/JSONable.swift; sourceTree = "<group>"; };
+		11C4D2EEED93D9EEB0EDD622ADAB8142 /* Pods-Tina-Demo-macos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tina-Demo-macos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A78847E34C550BFBADB6A6690618E8F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		1ABF86ADD29475C4729D971D176DF9CD /* Tina-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tina-watchOS-umbrella.h"; path = "../Tina-watchOS/Tina-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		1C8C527CB50D034115707B7AC3881D2F /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		1E6A07CA80CDE74EA9F51EBE71CABB9B /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Tina/Task.swift; sourceTree = "<group>"; };
+		22806F8F10368B0F7ED995D57C6B28CC /* Tina-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Tina-tvOS.modulemap"; path = "../Tina-tvOS/Tina-tvOS.modulemap"; sourceTree = "<group>"; };
+		25B7D8DBB03D67ECD67F7447027E4E27 /* Pods-Tina-Demo-tvos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tina-Demo-tvos-umbrella.h"; sourceTree = "<group>"; };
+		27A94456F85C71375E84A99653658A67 /* Pods-Tina-Demo-macos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tina-Demo-macos-acknowledgements.plist"; sourceTree = "<group>"; };
+		2869A2B725DA9DBC11A65B0845C9BBAA /* Tina-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tina-watchOS-prefix.pch"; path = "../Tina-watchOS/Tina-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		288796B12085368D369047F4EDC42754 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		28921DF53BC050CBE727FB56C70D19E8 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		29432508719A237448013EE6CF330184 /* Method.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Method.swift; path = Sources/Tina/Method.swift; sourceTree = "<group>"; };
+		2A668E7159DE37647D8DEDFBB72469FE /* Tina-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Tina-macOS-dummy.m"; path = "../Tina-macOS/Tina-macOS-dummy.m"; sourceTree = "<group>"; };
+		2D900F33325DAC48816A53F0F587C45A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		314BD75DEE7A89579BE97DE54C32EE96 /* Alamofire-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-macOS.release.xcconfig"; path = "../Alamofire-macOS/Alamofire-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		3213AABCF36A29EE72E002ED860C457A /* Tina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Tina.framework; path = "Tina-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		359F99ABFD8F630602C2EF201B5E6772 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		37B47F0BF2BBF8C5475EC9A5463B0B4D /* Tina-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Tina-watchOS.release.xcconfig"; path = "../Tina-watchOS/Tina-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		3818E30077F0F6A6C46B96171997CA35 /* Alamofire-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Alamofire-tvOS-dummy.m"; path = "../Alamofire-tvOS/Alamofire-tvOS-dummy.m"; sourceTree = "<group>"; };
+		390CD668AFFE1B319F2F3C858F038A4C /* Tina-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tina-tvOS-prefix.pch"; path = "../Tina-tvOS/Tina-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		39E027F1F93465BD5ADD720B51A1BFCD /* Alamofire-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Alamofire-macOS-dummy.m"; path = "../Alamofire-macOS/Alamofire-macOS-dummy.m"; sourceTree = "<group>"; };
+		3D05D650938DCBF18CE4A31FAC96774D /* Pods-Tina-Demo-tvos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tina-Demo-tvos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3F273C5FB910AE7B13D39A01A951ECC5 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		40F918E762C7358D18A2BEA514504714 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Sources/Tina/Session.swift; sourceTree = "<group>"; };
+		42C830BB6C5D23C50648762EA37415E4 /* Tina-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tina-macOS-umbrella.h"; path = "../Tina-macOS/Tina-macOS-umbrella.h"; sourceTree = "<group>"; };
+		432C00991F47C236386C5E18C26A3819 /* Pods-Tina-Demo-tvos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tina-Demo-tvos-dummy.m"; sourceTree = "<group>"; };
+		43DA6DFAA898F949ACBD91D709EF13F8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "Alamofire-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4442B30070A52328081DD50E16C1C2A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		46671B2996A6C760B7C444BB390E8637 /* Alamofire-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-iOS-umbrella.h"; sourceTree = "<group>"; };
+		46835E933BEAB80652E5924E581A6A2F /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		482BF5104FD342A9F7406A3C00562ACE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		4A5BE43D7A71DFD6B7CE6920228C646F /* Pods-Tina-Demo-watchos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tina-Demo-watchos-umbrella.h"; sourceTree = "<group>"; };
+		4B07089A2C76151A0939E602FCD5F893 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		50C1A2E6F57A9E54FFF94D53A83346C1 /* Pods-Tina-Demo-watchos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tina-Demo-watchos-frameworks.sh"; sourceTree = "<group>"; };
+		545CA2E13E981B59248EA50CE2677504 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		569C391D132FAD38F96B42D421DD6589 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		591EE4321DDFF9CAF5BDA05FBB48F379 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A4207F9CA12E6432187F329F4D32ED8 /* Pods_Tina_Demo_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tina_Demo_macos.framework; path = "Pods-Tina-Demo-macos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B63F5F5E1AFE757E722208D51414A81 /* Alamofire-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-tvOS.release.xcconfig"; path = "../Alamofire-tvOS/Alamofire-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		5B77EBE4261B11DF2A6567C4EA6E27AB /* Pods_Tina_Demo_tvos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tina_Demo_tvos.framework; path = "Pods-Tina-Demo-tvos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C50ACF6C828DC983548A900D44B700F /* Tina-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tina-iOS-prefix.pch"; sourceTree = "<group>"; };
+		5C6DA06E26046F9489C7FB42878E0C44 /* Tina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Tina.framework; path = "Tina-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCC800E56187C5B726B13E922D0196A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		5E9405E117AA5D270508E8032DADEB12 /* Alamofire-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-iOS-Info.plist"; sourceTree = "<group>"; };
+		61B5DAE3BF1D8400D1C18893C56B82BA /* Tina-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Tina-watchOS-Info.plist"; path = "../Tina-watchOS/Tina-watchOS-Info.plist"; sourceTree = "<group>"; };
+		64DAC2584CC21474F5CB9AFA785AF23B /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		657DA5D3B8A23A82E09E523BE3E36A6B /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		6697A9E70534D7868FCAC98B6D08E7C9 /* Tina-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Tina-watchOS.modulemap"; path = "../Tina-watchOS/Tina-watchOS.modulemap"; sourceTree = "<group>"; };
+		67B3CE5884DC8765B4AC41A656958E0D /* Alamofire-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-watchOS.debug.xcconfig"; path = "../Alamofire-watchOS/Alamofire-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		683EB8AE4F204753A0AFBBFC4A6B3085 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		6857A62375A615565B1F86A845AFD1F6 /* Tina.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Tina.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		698AD53978C0EE854BADF37D7589B402 /* Tina-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tina-iOS-umbrella.h"; sourceTree = "<group>"; };
+		708E7E3B0B6A25CDD88F9BFA684FE707 /* Tina-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Tina-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		738B981299D4F987F55A71A3B9DE896A /* Tina-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Tina-tvOS.debug.xcconfig"; path = "../Tina-tvOS/Tina-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		752B376F525FA86EB346F398511FDBAF /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		75966F993EDA5E1ED2F8D34C6B6051A8 /* Alamofire-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-tvOS.debug.xcconfig"; path = "../Alamofire-tvOS/Alamofire-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		792E324C859CC946BD790D20A2365A1F /* Pods-Tina-Demo-tvos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tina-Demo-tvos-acknowledgements.plist"; sourceTree = "<group>"; };
+		7AA08BEE29AAB1D0AAB08A61A5AAD847 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		7B07A9B9AE8F3EB5405F7616E2914ABE /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		7D2AC8D041282A7057783766B8FAB732 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		7D384ECFAAE59EC3AEF8237E0B853438 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "Alamofire-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2990FFC671C480D9ABA2C4F3E63866 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		7FE1A853DE1FC3DE8CF2EAC654308241 /* Alamofire-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-macOS.debug.xcconfig"; path = "../Alamofire-macOS/Alamofire-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		80F250247AEAD954F92D614F7588EB3C /* Alamofire-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Alamofire-tvOS.modulemap"; path = "../Alamofire-tvOS/Alamofire-tvOS.modulemap"; sourceTree = "<group>"; };
+		81CA95AB7A5271C233C0873CD0E1CC6E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		8395B9B2946E6DA4156E6FC92AD7D141 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		87578383597E910D532C04D16E6D0DE2 /* Tina-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tina-iOS-dummy.m"; sourceTree = "<group>"; };
+		8931A60CAD105DF8D25788FED060D377 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8A793ABA5EC6318EFF97E871B43C3AB5 /* Pods-Tina-Demo-macos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tina-Demo-macos-frameworks.sh"; sourceTree = "<group>"; };
+		8AF6965E1F798623BD2DEE8F536F7E94 /* Tina-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Tina-tvOS.release.xcconfig"; path = "../Tina-tvOS/Tina-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		8DB7B59AE580DEFB588E31C772B6FF03 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		8DBF4149EFBF8D5A34C67B55EBCBBB0F /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		8E78224A6584E4C77ADA08D3358E9184 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		8FF7B1DD0C407DCB6A4887619069650F /* Alamofire-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Alamofire-macOS-Info.plist"; path = "../Alamofire-macOS/Alamofire-macOS-Info.plist"; sourceTree = "<group>"; };
+		923627B2E0365F9901A7858E28D68A68 /* Tina-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Tina-watchOS-dummy.m"; path = "../Tina-watchOS/Tina-watchOS-dummy.m"; sourceTree = "<group>"; };
+		938F64B1C1C368D08A55315B91C818AE /* Pods-Tina-Demo-tvos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tina-Demo-tvos.debug.xcconfig"; sourceTree = "<group>"; };
+		951E85ADE575997E172B2C5F7F90701A /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		95E19AE029507723EF27CB5AB46DEA57 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Tina/Response.swift; sourceTree = "<group>"; };
+		966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = "Alamofire-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		985AFF19056355B6D88F8E39489C1392 /* Tina-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Tina-macOS.modulemap"; path = "../Tina-macOS/Tina-macOS.modulemap"; sourceTree = "<group>"; };
+		986A153228D27BD1F72CAF2C1E50FD38 /* Alamofire-tvOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Alamofire-tvOS-Info.plist"; path = "../Alamofire-tvOS/Alamofire-tvOS-Info.plist"; sourceTree = "<group>"; };
+		98CAB1EF2C311C4119F3DA5E019CC060 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		99243A06CF272EDFEBB9A89F33291D49 /* Tina-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Tina-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9A20A1892976434490432955B8037C52 /* Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Header.swift; path = Sources/Tina/Header.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D9B1439E22C5A203B71F806CB43DA3E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		9E639D611B27070E04B0EBE283A90F5C /* Pods-Tina-Demo-watchos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tina-Demo-watchos-acknowledgements.plist"; sourceTree = "<group>"; };
+		A0314E7F2C91968F892925ABBFBB417B /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		A3DDD540A5DE65C2E8B861CAAE0E2167 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		A6DC8829776AEA37DC933928F3AEF92C /* Pods-Tina-Demo-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tina-Demo-macos.release.xcconfig"; sourceTree = "<group>"; };
+		A82F897D747AF94B1FF4143701D17A30 /* Pods-Tina-Demo-watchos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tina-Demo-watchos.modulemap"; sourceTree = "<group>"; };
+		A8F8832C9A065E76596009219F2A41F5 /* Alamofire-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Alamofire-iOS.modulemap"; sourceTree = "<group>"; };
+		ABC843F77C4CC50B1EAAFCE5F1EA86F5 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		AC09B0319C590AB70DA504538A911558 /* Alamofire-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AE2EA60C1EF69263C4417979B12FFC6A /* Pods-Tina-Demo-macos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tina-Demo-macos-Info.plist"; sourceTree = "<group>"; };
+		AF32F4C37A4A6048343850746211246E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C8EDAD122AB9688B70A3592B2D2712 /* Pods-Tina-Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tina-Demo-Info.plist"; sourceTree = "<group>"; };
+		B56D3D9A4032836AA2D05CA9E9EF4C4E /* Pods-Tina-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tina-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB2ABA658FFA3E7EDE11F325A38EBF07 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		BB9DB0310110F2107A2965F2F54FD2D0 /* Alamofire-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Alamofire-watchOS-dummy.m"; path = "../Alamofire-watchOS/Alamofire-watchOS-dummy.m"; sourceTree = "<group>"; };
+		BE662299DBC468AA4A72C6CAC0CBA12E /* Pods_Tina_Demo_watchos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tina_Demo_watchos.framework; path = "Pods-Tina-Demo-watchos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE387CF6DEC5736D512953300B85305 /* Pods-Tina-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tina-Demo-frameworks.sh"; sourceTree = "<group>"; };
+		C07A51DE5D63E4BC5AC6BF63642F6015 /* Pods-Tina-Demo-tvos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tina-Demo-tvos.release.xcconfig"; sourceTree = "<group>"; };
+		C1EB6B5FDB3C0EF047DA2723417D186C /* Alamofire-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Alamofire-watchOS.modulemap"; path = "../Alamofire-watchOS/Alamofire-watchOS.modulemap"; sourceTree = "<group>"; };
+		C5573263A98470A7BE38BDC014E06189 /* Alamofire-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-watchOS-umbrella.h"; path = "../Alamofire-watchOS/Alamofire-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		C568911A2FED805A4F59F743FA1B80FD /* Pods_Tina_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tina_Demo.framework; path = "Pods-Tina-Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6904D29E5C2627B19D3CEA902CE10A1 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		C6E9A8C2969226B4C82D39C599B469ED /* Pods-Tina-Demo-watchos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tina-Demo-watchos-dummy.m"; sourceTree = "<group>"; };
+		C82E78B888245FA389D1DBB8AF0C539E /* Pods-Tina-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tina-Demo-dummy.m"; sourceTree = "<group>"; };
+		C8B1B201E6E8FF2EDAB1A4D9C7C03C70 /* Pods-Tina-Demo-macos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tina-Demo-macos-umbrella.h"; sourceTree = "<group>"; };
+		C977B164F467484F175D20F02008BA92 /* Pods-Tina-Demo-watchos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tina-Demo-watchos-Info.plist"; sourceTree = "<group>"; };
+		CCB60E24A0022269AAB589BB49223BFE /* Pods-Tina-Demo-watchos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tina-Demo-watchos.release.xcconfig"; sourceTree = "<group>"; };
+		D0A1A52B40BEDBFBE8F6E1F2090D0471 /* Pods-Tina-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tina-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1BEB1F935045328F1A1AB5024841048 /* Pods-Tina-Demo-tvos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tina-Demo-tvos.modulemap"; sourceTree = "<group>"; };
+		D30DBD1141FDE5A589ABF7D18BDA68AB /* Tina-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Tina-watchOS.debug.xcconfig"; path = "../Tina-watchOS/Tina-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D4FC168950BEA36BF0019BB49F53CFCC /* Alamofire-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Alamofire-watchOS-Info.plist"; path = "../Alamofire-watchOS/Alamofire-watchOS-Info.plist"; sourceTree = "<group>"; };
+		D522912B311FB78D8554A6985312FC73 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		D7D250770BDFEBE49F68E45CA4396197 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Sources/Tina/Request.swift; sourceTree = "<group>"; };
+		DA759B0F4631F85245EC184123BA1763 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		DC70079FB2D978CA1538CD9513E07CFB /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		DC91EB3768B58A6564D68B4FFE37F2C2 /* Alamofire-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-watchOS.release.xcconfig"; path = "../Alamofire-watchOS/Alamofire-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		DCAE2ED90CCA9D473762387F867BE94E /* Tina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Tina.framework; path = "Tina-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD838B86732ABBA3D18087B45070DB10 /* Pods-Tina-Demo-watchos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tina-Demo-watchos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DE8D061A875044510A72229AA78BE17C /* Pods-Tina-Demo-watchos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tina-Demo-watchos.debug.xcconfig"; sourceTree = "<group>"; };
+		DF88913342EA8E2DC2610D600EBE34CC /* Parameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Sources/Tina/Parameters.swift; sourceTree = "<group>"; };
+		E26F40EEC87EFADFB80FC96D8B38583D /* Pods-Tina-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tina-Demo.modulemap"; sourceTree = "<group>"; };
+		E305ADEE2ADD1C104AA59329F08DD872 /* Pods-Tina-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tina-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		E3A35DE7C1B8F0E8BC63152B8924D301 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		E480FB06AEF204D403360F93E4B9D42B /* Tina-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Tina-macOS.release.xcconfig"; path = "../Tina-macOS/Tina-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		E5647146C39FE45951FB6AB790742E30 /* Tina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Tina.framework; path = "Tina-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AA6419BE1F874EA4C4362542BB823D /* Pods-Tina-Demo-tvos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tina-Demo-tvos-frameworks.sh"; sourceTree = "<group>"; };
+		E5AEDF08E1309084962722E82910D2DF /* Tina-tvOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Tina-tvOS-Info.plist"; path = "../Tina-tvOS/Tina-tvOS-Info.plist"; sourceTree = "<group>"; };
+		EA4BA168A2E6BFF162602EED8184A6AB /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		EDF10027B980CBD34D9D66833695DC81 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		EE017153B97396EE4D0138E2C4CE3734 /* Tina-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Tina-iOS-Info.plist"; sourceTree = "<group>"; };
+		EE36871AF71610614952E457821AF946 /* Pods-Tina-Demo-macos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tina-Demo-macos.modulemap"; sourceTree = "<group>"; };
+		EEF9A03AB2F4B29D80DBEDE532FBF993 /* Alamofire-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F136F9A2E90581B3F77B4812A7D0DF76 /* Alamofire-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-macOS-umbrella.h"; path = "../Alamofire-macOS/Alamofire-macOS-umbrella.h"; sourceTree = "<group>"; };
+		F1F3F4D0D8BC29DAFE81100847E113FE /* Pods-Tina-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tina-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		F20303D7609D00FF1AB07D7701068564 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Tina/Error.swift; sourceTree = "<group>"; };
+		F327D5E602E213F4AF58FC2BA2726B5E /* Tina-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Tina-tvOS-dummy.m"; path = "../Tina-tvOS/Tina-tvOS-dummy.m"; sourceTree = "<group>"; };
+		F4CDEFD47E50F15EECF80E994988871C /* Tina-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tina-macOS-prefix.pch"; path = "../Tina-macOS/Tina-macOS-prefix.pch"; sourceTree = "<group>"; };
+		F526B525EA5A94C2ABD86B17C248BEF7 /* Pods-Tina-Demo-tvos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tina-Demo-tvos-Info.plist"; sourceTree = "<group>"; };
+		F5CC6C55B496EBEFB726C75089A9064B /* Pods-Tina-Demo-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tina-Demo-macos.debug.xcconfig"; sourceTree = "<group>"; };
+		FC704A1C3FE901A042D02B04F28FF118 /* Tina-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tina-tvOS-umbrella.h"; path = "../Tina-tvOS/Tina-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		FCBCF5753E5A9368ED08013618DE2EB9 /* Pods-Tina-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tina-Demo-umbrella.h"; sourceTree = "<group>"; };
+		FE8D5FF53AE39EA96B273E4B9690443E /* Handle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Handle.swift; path = Sources/Tina/Handle.swift; sourceTree = "<group>"; };
+		FFB9B84ECF5402E0E00B9278070144AF /* Tina-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Tina-macOS.debug.xcconfig"; path = "../Tina-macOS/Tina-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		154E37EB913BD1419C5251D81A2D5D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B9C4771DF84ECFBFCF2E9C55C12747 /* Alamofire.framework in Frameworks */,
+				9771944441AABD3198DA905C4860FDC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E08A852FA2264E5D27643A2D40BA84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA1252B4DCBE61085911FF1D980D23C /* CFNetwork.framework in Frameworks */,
+				2ED48B0DE55B1A3EC0965DA85017E397 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431806C2AD3371E7C1C15D14CFB5DCCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09DB77871372A1CCE03BD15138E96795 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55D23CC7CEF88E1F48E9C2F8262427A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4739E108FBD58BE9E845C2F8E75B0011 /* Alamofire.framework in Frameworks */,
+				4AF828D390AD4F930DAADC9E6F5298C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA48D2EF0E4B4C02BA0683C076AC37C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16CE54BA3EDD30F9E786FB98AE98725 /* CFNetwork.framework in Frameworks */,
+				8D88F7E33EB99B93B9DBFE671E754593 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EAB5D96FC457ADC1BAF84B5693C0B95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B2E2E1DE70043A0D413F360AB1F069 /* Alamofire.framework in Frameworks */,
+				AD69A492821B16CE7869487E4F8A9CCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9B5BD56791127F184BC10F14EA9575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411F79C81127C78D4411D0CC4DF84301 /* CFNetwork.framework in Frameworks */,
+				3DC0448F238194FA011B4149992B4782 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646A4B821B9659DAE6E07A6B6EA5C360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6823FF4E8CA1382CCA95288541AE872 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F7CF0BE80A6FA27A5DEF0E38C0547F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3128821B62AAB09D0C6E75FD84B21500 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F7A7FDC49034970CC342D84E0E1EBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FA8B45D14F6A4EC2624B34EBC2375F8 /* Alamofire.framework in Frameworks */,
+				402430BDC5C107990D6132EF0B55340E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE234C66C4A885DB26CA1055302B85C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17A8905D9B83D3E9D77323161A4EB95 /* CFNetwork.framework in Frameworks */,
+				2C4B3C583C5F55B029D86C108C3145BD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F2EE7E37558FF44B1AFED5249530D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A98AD7637C1B9869E8448618789CCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DDD74968C4233B5BC86BAFFB76BD9FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0939DEC55CEBE8830FFDBAEC8CE22B74 /* Tina-iOS.modulemap */,
+				87578383597E910D532C04D16E6D0DE2 /* Tina-iOS-dummy.m */,
+				EE017153B97396EE4D0138E2C4CE3734 /* Tina-iOS-Info.plist */,
+				5C50ACF6C828DC983548A900D44B700F /* Tina-iOS-prefix.pch */,
+				698AD53978C0EE854BADF37D7589B402 /* Tina-iOS-umbrella.h */,
+				708E7E3B0B6A25CDD88F9BFA684FE707 /* Tina-iOS.debug.xcconfig */,
+				99243A06CF272EDFEBB9A89F33291D49 /* Tina-iOS.release.xcconfig */,
+				985AFF19056355B6D88F8E39489C1392 /* Tina-macOS.modulemap */,
+				2A668E7159DE37647D8DEDFBB72469FE /* Tina-macOS-dummy.m */,
+				0C02FC43AB2B1BEF4D051069B15F08A1 /* Tina-macOS-Info.plist */,
+				F4CDEFD47E50F15EECF80E994988871C /* Tina-macOS-prefix.pch */,
+				42C830BB6C5D23C50648762EA37415E4 /* Tina-macOS-umbrella.h */,
+				FFB9B84ECF5402E0E00B9278070144AF /* Tina-macOS.debug.xcconfig */,
+				E480FB06AEF204D403360F93E4B9D42B /* Tina-macOS.release.xcconfig */,
+				22806F8F10368B0F7ED995D57C6B28CC /* Tina-tvOS.modulemap */,
+				F327D5E602E213F4AF58FC2BA2726B5E /* Tina-tvOS-dummy.m */,
+				E5AEDF08E1309084962722E82910D2DF /* Tina-tvOS-Info.plist */,
+				390CD668AFFE1B319F2F3C858F038A4C /* Tina-tvOS-prefix.pch */,
+				FC704A1C3FE901A042D02B04F28FF118 /* Tina-tvOS-umbrella.h */,
+				738B981299D4F987F55A71A3B9DE896A /* Tina-tvOS.debug.xcconfig */,
+				8AF6965E1F798623BD2DEE8F536F7E94 /* Tina-tvOS.release.xcconfig */,
+				6697A9E70534D7868FCAC98B6D08E7C9 /* Tina-watchOS.modulemap */,
+				923627B2E0365F9901A7858E28D68A68 /* Tina-watchOS-dummy.m */,
+				61B5DAE3BF1D8400D1C18893C56B82BA /* Tina-watchOS-Info.plist */,
+				2869A2B725DA9DBC11A65B0845C9BBAA /* Tina-watchOS-prefix.pch */,
+				1ABF86ADD29475C4729D971D176DF9CD /* Tina-watchOS-umbrella.h */,
+				D30DBD1141FDE5A589ABF7D18BDA68AB /* Tina-watchOS.debug.xcconfig */,
+				37B47F0BF2BBF8C5475EC9A5463B0B4D /* Tina-watchOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Tina-Demo/Pods/Target Support Files/Tina-iOS";
+			sourceTree = "<group>";
+		};
+		33B4F80D4A66E689A0CAA0755BD2D30F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AA7C8CC8A72FF655D9D1E81D300C7D2 /* Tina */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3B341738910D349AA39DFFE27765248C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8F8832C9A065E76596009219F2A41F5 /* Alamofire-iOS.modulemap */,
+				0407CF400ED9FA98E7B09C4DDF0E8023 /* Alamofire-iOS-dummy.m */,
+				5E9405E117AA5D270508E8032DADEB12 /* Alamofire-iOS-Info.plist */,
+				0383D3B97AC6BE825A06DDCF16C2F174 /* Alamofire-iOS-prefix.pch */,
+				46671B2996A6C760B7C444BB390E8637 /* Alamofire-iOS-umbrella.h */,
+				EEF9A03AB2F4B29D80DBEDE532FBF993 /* Alamofire-iOS.debug.xcconfig */,
+				AC09B0319C590AB70DA504538A911558 /* Alamofire-iOS.release.xcconfig */,
+				0A9AEAFF8E8164E593BA5859B25A897A /* Alamofire-macOS.modulemap */,
+				39E027F1F93465BD5ADD720B51A1BFCD /* Alamofire-macOS-dummy.m */,
+				8FF7B1DD0C407DCB6A4887619069650F /* Alamofire-macOS-Info.plist */,
+				08016A13A3F6235B07F1BF12786D3C18 /* Alamofire-macOS-prefix.pch */,
+				F136F9A2E90581B3F77B4812A7D0DF76 /* Alamofire-macOS-umbrella.h */,
+				7FE1A853DE1FC3DE8CF2EAC654308241 /* Alamofire-macOS.debug.xcconfig */,
+				314BD75DEE7A89579BE97DE54C32EE96 /* Alamofire-macOS.release.xcconfig */,
+				80F250247AEAD954F92D614F7588EB3C /* Alamofire-tvOS.modulemap */,
+				3818E30077F0F6A6C46B96171997CA35 /* Alamofire-tvOS-dummy.m */,
+				986A153228D27BD1F72CAF2C1E50FD38 /* Alamofire-tvOS-Info.plist */,
+				06F13042732F38A1930A266A9B9F62EA /* Alamofire-tvOS-prefix.pch */,
+				0B49D1C01F1F813EDE96691A93F94EC7 /* Alamofire-tvOS-umbrella.h */,
+				75966F993EDA5E1ED2F8D34C6B6051A8 /* Alamofire-tvOS.debug.xcconfig */,
+				5B63F5F5E1AFE757E722208D51414A81 /* Alamofire-tvOS.release.xcconfig */,
+				C1EB6B5FDB3C0EF047DA2723417D186C /* Alamofire-watchOS.modulemap */,
+				BB9DB0310110F2107A2965F2F54FD2D0 /* Alamofire-watchOS-dummy.m */,
+				D4FC168950BEA36BF0019BB49F53CFCC /* Alamofire-watchOS-Info.plist */,
+				0D14256E203AD9E8F6E234B2B04373F7 /* Alamofire-watchOS-prefix.pch */,
+				C5573263A98470A7BE38BDC014E06189 /* Alamofire-watchOS-umbrella.h */,
+				67B3CE5884DC8765B4AC41A656958E0D /* Alamofire-watchOS.debug.xcconfig */,
+				DC91EB3768B58A6564D68B4FFE37F2C2 /* Alamofire-watchOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire-iOS";
+			sourceTree = "<group>";
+		};
+		3C217A539025061041ED2EFF1FAC4B7E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				5DCC800E56187C5B726B13E922D0196A /* CFNetwork.framework */,
+				E3A35DE7C1B8F0E8BC63152B8924D301 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		4B746AE4F526291F0FBFA7663267C718 /* Pods-Tina-Demo-macos */ = {
+			isa = PBXGroup;
+			children = (
+				EE36871AF71610614952E457821AF946 /* Pods-Tina-Demo-macos.modulemap */,
+				11C4D2EEED93D9EEB0EDD622ADAB8142 /* Pods-Tina-Demo-macos-acknowledgements.markdown */,
+				27A94456F85C71375E84A99653658A67 /* Pods-Tina-Demo-macos-acknowledgements.plist */,
+				00F0B4D6A8D9766B660FB7F23DF46950 /* Pods-Tina-Demo-macos-dummy.m */,
+				8A793ABA5EC6318EFF97E871B43C3AB5 /* Pods-Tina-Demo-macos-frameworks.sh */,
+				AE2EA60C1EF69263C4417979B12FFC6A /* Pods-Tina-Demo-macos-Info.plist */,
+				C8B1B201E6E8FF2EDAB1A4D9C7C03C70 /* Pods-Tina-Demo-macos-umbrella.h */,
+				F5CC6C55B496EBEFB726C75089A9064B /* Pods-Tina-Demo-macos.debug.xcconfig */,
+				A6DC8829776AEA37DC933928F3AEF92C /* Pods-Tina-Demo-macos.release.xcconfig */,
+			);
+			name = "Pods-Tina-Demo-macos";
+			path = "Target Support Files/Pods-Tina-Demo-macos";
+			sourceTree = "<group>";
+		};
+		5979140EAAE516F89A71027C00F69415 /* Pods-Tina-Demo-tvos */ = {
+			isa = PBXGroup;
+			children = (
+				D1BEB1F935045328F1A1AB5024841048 /* Pods-Tina-Demo-tvos.modulemap */,
+				3D05D650938DCBF18CE4A31FAC96774D /* Pods-Tina-Demo-tvos-acknowledgements.markdown */,
+				792E324C859CC946BD790D20A2365A1F /* Pods-Tina-Demo-tvos-acknowledgements.plist */,
+				432C00991F47C236386C5E18C26A3819 /* Pods-Tina-Demo-tvos-dummy.m */,
+				E5AA6419BE1F874EA4C4362542BB823D /* Pods-Tina-Demo-tvos-frameworks.sh */,
+				F526B525EA5A94C2ABD86B17C248BEF7 /* Pods-Tina-Demo-tvos-Info.plist */,
+				25B7D8DBB03D67ECD67F7447027E4E27 /* Pods-Tina-Demo-tvos-umbrella.h */,
+				938F64B1C1C368D08A55315B91C818AE /* Pods-Tina-Demo-tvos.debug.xcconfig */,
+				C07A51DE5D63E4BC5AC6BF63642F6015 /* Pods-Tina-Demo-tvos.release.xcconfig */,
+			);
+			name = "Pods-Tina-Demo-tvos";
+			path = "Target Support Files/Pods-Tina-Demo-tvos";
+			sourceTree = "<group>";
+		};
+		813C0181230D5913D193C5DB3F222618 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4442B30070A52328081DD50E16C1C2A2 /* LICENSE */,
+				8931A60CAD105DF8D25788FED060D377 /* README.md */,
+				6857A62375A615565B1F86A845AFD1F6 /* Tina.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8717D7C880A8928FB872B1AB325302C7 /* Pods-Tina-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E26F40EEC87EFADFB80FC96D8B38583D /* Pods-Tina-Demo.modulemap */,
+				D0A1A52B40BEDBFBE8F6E1F2090D0471 /* Pods-Tina-Demo-acknowledgements.markdown */,
+				B56D3D9A4032836AA2D05CA9E9EF4C4E /* Pods-Tina-Demo-acknowledgements.plist */,
+				C82E78B888245FA389D1DBB8AF0C539E /* Pods-Tina-Demo-dummy.m */,
+				BFE387CF6DEC5736D512953300B85305 /* Pods-Tina-Demo-frameworks.sh */,
+				B2C8EDAD122AB9688B70A3592B2D2712 /* Pods-Tina-Demo-Info.plist */,
+				FCBCF5753E5A9368ED08013618DE2EB9 /* Pods-Tina-Demo-umbrella.h */,
+				F1F3F4D0D8BC29DAFE81100847E113FE /* Pods-Tina-Demo.debug.xcconfig */,
+				E305ADEE2ADD1C104AA59329F08DD872 /* Pods-Tina-Demo.release.xcconfig */,
+			);
+			name = "Pods-Tina-Demo";
+			path = "Target Support Files/Pods-Tina-Demo";
+			sourceTree = "<group>";
+		};
+		8AA7C8CC8A72FF655D9D1E81D300C7D2 /* Tina */ = {
+			isa = PBXGroup;
+			children = (
+				F20303D7609D00FF1AB07D7701068564 /* Error.swift */,
+				FE8D5FF53AE39EA96B273E4B9690443E /* Handle.swift */,
+				9A20A1892976434490432955B8037C52 /* Header.swift */,
+				0EB13DC435FF11A470F3B350BEC1FBE7 /* JSONable.swift */,
+				29432508719A237448013EE6CF330184 /* Method.swift */,
+				DF88913342EA8E2DC2610D600EBE34CC /* Parameters.swift */,
+				D7D250770BDFEBE49F68E45CA4396197 /* Request.swift */,
+				95E19AE029507723EF27CB5AB46DEA57 /* Response.swift */,
+				40F918E762C7358D18A2BEA514504714 /* Session.swift */,
+				1E6A07CA80CDE74EA9F51EBE71CABB9B /* Task.swift */,
+				813C0181230D5913D193C5DB3F222618 /* Pod */,
+				0DDD74968C4233B5BC86BAFFB76BD9FC /* Support Files */,
+			);
+			name = Tina;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B66AEC9E29F0E9BCA607A03749340C11 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				482BF5104FD342A9F7406A3C00562ACE /* CFNetwork.framework */,
+				04DC5CC672C568C2CCCFA07A7960722F /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		B7A0D604B64665073A96AC2ECA67D51F /* Pods-Tina-Demo-watchos */ = {
+			isa = PBXGroup;
+			children = (
+				A82F897D747AF94B1FF4143701D17A30 /* Pods-Tina-Demo-watchos.modulemap */,
+				DD838B86732ABBA3D18087B45070DB10 /* Pods-Tina-Demo-watchos-acknowledgements.markdown */,
+				9E639D611B27070E04B0EBE283A90F5C /* Pods-Tina-Demo-watchos-acknowledgements.plist */,
+				C6E9A8C2969226B4C82D39C599B469ED /* Pods-Tina-Demo-watchos-dummy.m */,
+				50C1A2E6F57A9E54FFF94D53A83346C1 /* Pods-Tina-Demo-watchos-frameworks.sh */,
+				C977B164F467484F175D20F02008BA92 /* Pods-Tina-Demo-watchos-Info.plist */,
+				4A5BE43D7A71DFD6B7CE6920228C646F /* Pods-Tina-Demo-watchos-umbrella.h */,
+				DE8D061A875044510A72229AA78BE17C /* Pods-Tina-Demo-watchos.debug.xcconfig */,
+				CCB60E24A0022269AAB589BB49223BFE /* Pods-Tina-Demo-watchos.release.xcconfig */,
+			);
+			name = "Pods-Tina-Demo-watchos";
+			path = "Target Support Files/Pods-Tina-Demo-watchos";
+			sourceTree = "<group>";
+		};
+		BE51C85BAEC648EEF73AABD5428221C5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BB2ABA658FFA3E7EDE11F325A38EBF07 /* CFNetwork.framework */,
+				591EE4321DDFF9CAF5BDA05FBB48F379 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CA90B1C2C0207CD1287B4FBF2441F12D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF32F4C37A4A6048343850746211246E /* Alamofire.framework */,
+				BE51C85BAEC648EEF73AABD5428221C5 /* iOS */,
+				3C217A539025061041ED2EFF1FAC4B7E /* OS X */,
+				B66AEC9E29F0E9BCA607A03749340C11 /* tvOS */,
+				E1C8F285269666F519FE2F51E91072E3 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD4503DDE39D7052563FDC797D4C7789 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CCE9CB82B4F89C8E07ADCACFD3DB134 /* Alamofire.framework */,
+				7D384ECFAAE59EC3AEF8237E0B853438 /* Alamofire.framework */,
+				43DA6DFAA898F949ACBD91D709EF13F8 /* Alamofire.framework */,
+				966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */,
+				C568911A2FED805A4F59F743FA1B80FD /* Pods_Tina_Demo.framework */,
+				5A4207F9CA12E6432187F329F4D32ED8 /* Pods_Tina_Demo_macos.framework */,
+				5B77EBE4261B11DF2A6567C4EA6E27AB /* Pods_Tina_Demo_tvos.framework */,
+				BE662299DBC468AA4A72C6CAC0CBA12E /* Pods_Tina_Demo_watchos.framework */,
+				DCAE2ED90CCA9D473762387F867BE94E /* Tina.framework */,
+				E5647146C39FE45951FB6AB790742E30 /* Tina.framework */,
+				5C6DA06E26046F9489C7FB42878E0C44 /* Tina.framework */,
+				3213AABCF36A29EE72E002ED860C457A /* Tina.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				33B4F80D4A66E689A0CAA0755BD2D30F /* Development Pods */,
+				CA90B1C2C0207CD1287B4FBF2441F12D /* Frameworks */,
+				D6535AE6278B88B90F3A376D1347504F /* Pods */,
+				CD4503DDE39D7052563FDC797D4C7789 /* Products */,
+				EFEA15629C60DEC5E563B08A55E63443 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D4ACCEB1A5909E79408E7CBC4B248174 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				4B07089A2C76151A0939E602FCD5F893 /* AFError.swift */,
+				8DB7B59AE580DEFB588E31C772B6FF03 /* Alamofire.swift */,
+				EA4BA168A2E6BFF162602EED8184A6AB /* AlamofireExtended.swift */,
+				569C391D132FAD38F96B42D421DD6589 /* AuthenticationInterceptor.swift */,
+				545CA2E13E981B59248EA50CE2677504 /* CachedResponseHandler.swift */,
+				98CAB1EF2C311C4119F3DA5E019CC060 /* Combine.swift */,
+				7AA08BEE29AAB1D0AAB08A61A5AAD847 /* DispatchQueue+Alamofire.swift */,
+				288796B12085368D369047F4EDC42754 /* EventMonitor.swift */,
+				8395B9B2946E6DA4156E6FC92AD7D141 /* HTTPHeaders.swift */,
+				8E78224A6584E4C77ADA08D3358E9184 /* HTTPMethod.swift */,
+				D522912B311FB78D8554A6985312FC73 /* MultipartFormData.swift */,
+				DA759B0F4631F85245EC184123BA1763 /* MultipartUpload.swift */,
+				8DBF4149EFBF8D5A34C67B55EBCBBB0F /* NetworkReachabilityManager.swift */,
+				951E85ADE575997E172B2C5F7F90701A /* Notifications.swift */,
+				A0314E7F2C91968F892925ABBFBB417B /* OperationQueue+Alamofire.swift */,
+				7D2AC8D041282A7057783766B8FAB732 /* ParameterEncoder.swift */,
+				9D9B1439E22C5A203B71F806CB43DA3E /* ParameterEncoding.swift */,
+				1C8C527CB50D034115707B7AC3881D2F /* Protected.swift */,
+				C6904D29E5C2627B19D3CEA902CE10A1 /* RedirectHandler.swift */,
+				1A78847E34C550BFBADB6A6690618E8F /* Request.swift */,
+				683EB8AE4F204753A0AFBBFC4A6B3085 /* RequestInterceptor.swift */,
+				DC70079FB2D978CA1538CD9513E07CFB /* RequestTaskMap.swift */,
+				3F273C5FB910AE7B13D39A01A951ECC5 /* Response.swift */,
+				81CA95AB7A5271C233C0873CD0E1CC6E /* ResponseSerialization.swift */,
+				359F99ABFD8F630602C2EF201B5E6772 /* Result+Alamofire.swift */,
+				A3DDD540A5DE65C2E8B861CAAE0E2167 /* RetryPolicy.swift */,
+				7E2990FFC671C480D9ABA2C4F3E63866 /* ServerTrustEvaluation.swift */,
+				657DA5D3B8A23A82E09E523BE3E36A6B /* Session.swift */,
+				64DAC2584CC21474F5CB9AFA785AF23B /* SessionDelegate.swift */,
+				ABC843F77C4CC50B1EAAFCE5F1EA86F5 /* StringEncoding+Alamofire.swift */,
+				752B376F525FA86EB346F398511FDBAF /* URLConvertible+URLRequestConvertible.swift */,
+				28921DF53BC050CBE727FB56C70D19E8 /* URLEncodedFormEncoder.swift */,
+				EDF10027B980CBD34D9D66833695DC81 /* URLRequest+Alamofire.swift */,
+				46835E933BEAB80652E5924E581A6A2F /* URLSessionConfiguration+Alamofire.swift */,
+				7B07A9B9AE8F3EB5405F7616E2914ABE /* Validation.swift */,
+				3B341738910D349AA39DFFE27765248C /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		D6535AE6278B88B90F3A376D1347504F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4ACCEB1A5909E79408E7CBC4B248174 /* Alamofire */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1C8F285269666F519FE2F51E91072E3 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				2D900F33325DAC48816A53F0F587C45A /* CFNetwork.framework */,
+				0E46C99AB45B2B24E98FD98B276CD764 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		EFEA15629C60DEC5E563B08A55E63443 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8717D7C880A8928FB872B1AB325302C7 /* Pods-Tina-Demo */,
+				4B746AE4F526291F0FBFA7663267C718 /* Pods-Tina-Demo-macos */,
+				5979140EAAE516F89A71027C00F69415 /* Pods-Tina-Demo-tvos */,
+				B7A0D604B64665073A96AC2ECA67D51F /* Pods-Tina-Demo-watchos */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29860E803130FDF18F419F5F719266B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658CD8202D130A282BEDC1670B30FD2A /* Alamofire-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34D4B491F1F7C552395CF9DC8121F608 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0B3A82CB83B39CE66607C96868E458 /* Pods-Tina-Demo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		401D52C897B1571ECD38AC9EDE68F988 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35ADBF0C65134E9BFE1D4E96116AA804 /* Alamofire-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A505D48D6A4C9EBAB87A7B63E06024 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD4070C59F277D280094569E53AB312 /* Pods-Tina-Demo-tvos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57DDC0D898F3F0EC0F7FA96FA95DA277 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F3A23CAB21C57E10916DBAA9BFC9D8D /* Pods-Tina-Demo-macos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C62B282A85F9444F4E7A1281711ABA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFE383C3E95432678909247F7CE0B0C /* Pods-Tina-Demo-watchos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		866459C9BBD02E3EA29F48217E5EADD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0830B717F6D902625D7F161F494C09 /* Tina-tvOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D992C591741E7DF4537129D56591FF8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11827E4C1704C75C724D26BDDB2D00F8 /* Alamofire-tvOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B72F212D2BC044B75E32B5BCDF5291 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CCC64DBE5B60DBEDDE32B130710BCE /* Alamofire-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E434C4447FA7D31F948C4D3DE56FEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C911B8A5C6D3AD667FC9C635582F4A /* Tina-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3D92297477938C5850323D69DC5E100 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBB1018023D4B63EC44067C33DCFB8C /* Tina-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE5DC4B555ADC658C81F527F72AAFFD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75584DB8669F284121FBF02C47AFFAAE /* Tina-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EB38A9BFD3E09D12CCDB0592D081EC4 /* Alamofire-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8BAFA6DE1E2D80B41DFB227B105DE6 /* Build configuration list for PBXNativeTarget "Alamofire-macOS" */;
+			buildPhases = (
+				B3B72F212D2BC044B75E32B5BCDF5291 /* Headers */,
+				39007C3A5CEC07534531E4FAA3FF93D1 /* Sources */,
+				AE234C66C4A885DB26CA1055302B85C1 /* Frameworks */,
+				F7E36C650B1B0F2EFD9F1FBC3015BE3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-macOS";
+			productName = "Alamofire-macOS";
+			productReference = 0CCE9CB82B4F89C8E07ADCACFD3DB134 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		256CDEE3D1CF9CE52D5391B2AAE7E07E /* Tina-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7306B0E7F7C4317071533ED35EFDD9AD /* Build configuration list for PBXNativeTarget "Tina-watchOS" */;
+			buildPhases = (
+				FE5DC4B555ADC658C81F527F72AAFFD9 /* Headers */,
+				8A262B2E5EEBC9F133D96A5B9B07825C /* Sources */,
+				154E37EB913BD1419C5251D81A2D5D37 /* Frameworks */,
+				195B37BDEAE732A5D5977A812F03E6B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79820138A27A3C1116E42381FEFB8E07 /* PBXTargetDependency */,
+			);
+			name = "Tina-watchOS";
+			productName = "Tina-watchOS";
+			productReference = DCAE2ED90CCA9D473762387F867BE94E /* Tina.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2FFBEF6B5886E5A406577C612CBAC293 /* Tina-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDB07EBD4951270A31FA878C360F263 /* Build configuration list for PBXNativeTarget "Tina-macOS" */;
+			buildPhases = (
+				D1E434C4447FA7D31F948C4D3DE56FEC /* Headers */,
+				7560A62A3C9533D1A7E31899B01DB036 /* Sources */,
+				94F7A7FDC49034970CC342D84E0E1EBA /* Frameworks */,
+				072A9A398F68674D424E4D6C362C95D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				632F1D339E3C61BB3A42CF56B53E1200 /* PBXTargetDependency */,
+			);
+			name = "Tina-macOS";
+			productName = "Tina-macOS";
+			productReference = 5C6DA06E26046F9489C7FB42878E0C44 /* Tina.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4482DB5ECA7D447A5384824BF1CF5903 /* Tina-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0C9D68BA1C3C1EA373C351B315F154C /* Build configuration list for PBXNativeTarget "Tina-iOS" */;
+			buildPhases = (
+				D3D92297477938C5850323D69DC5E100 /* Headers */,
+				9C862EEAA3B4D2B3BE40D357F99D779D /* Sources */,
+				5EAB5D96FC457ADC1BAF84B5693C0B95 /* Frameworks */,
+				71C032278294C0203654AF3C2983203C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6223327BF989B2DBC267B5A0EF3E81E /* PBXTargetDependency */,
+			);
+			name = "Tina-iOS";
+			productName = "Tina-iOS";
+			productReference = 3213AABCF36A29EE72E002ED860C457A /* Tina.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4A373FF96B796D26E7326C46F85E103A /* Pods-Tina-Demo-tvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39B6C09117EBC457870481C378E44936 /* Build configuration list for PBXNativeTarget "Pods-Tina-Demo-tvos" */;
+			buildPhases = (
+				50A505D48D6A4C9EBAB87A7B63E06024 /* Headers */,
+				056A33BE44A35A81FFEB2ABE7DEA9B52 /* Sources */,
+				D8F2EE7E37558FF44B1AFED5249530D0 /* Frameworks */,
+				3BE3EB382D36D640A4EE3DC86DD5821F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C496BF2F326D54F1DB174DE000F30B4A /* PBXTargetDependency */,
+				2C6978E1F2E077CCAC983B41394AD000 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tina-Demo-tvos";
+			productName = "Pods-Tina-Demo-tvos";
+			productReference = 5B77EBE4261B11DF2A6567C4EA6E27AB /* Pods_Tina_Demo_tvos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D7BE2D353D1A99CA4BF464A60D2925E /* Tina-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3BAA4D5C39925C6339A383B0B9251BC /* Build configuration list for PBXNativeTarget "Tina-tvOS" */;
+			buildPhases = (
+				866459C9BBD02E3EA29F48217E5EADD8 /* Headers */,
+				746B49734EE469EDD96B4CDB8EE9579F /* Sources */,
+				55D23CC7CEF88E1F48E9C2F8262427A1 /* Frameworks */,
+				50A2D8A27E9CCF8C1F26E7499284948C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				434499EA3D6AE1FEBF59C2255C361350 /* PBXTargetDependency */,
+			);
+			name = "Tina-tvOS";
+			productName = "Tina-tvOS";
+			productReference = E5647146C39FE45951FB6AB790742E30 /* Tina.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54EC3BB400983E17DAE5AC71E88176D2 /* Alamofire-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EA6ABD5D49121087EA2C3BED0327EA9 /* Build configuration list for PBXNativeTarget "Alamofire-tvOS" */;
+			buildPhases = (
+				9D992C591741E7DF4537129D56591FF8 /* Headers */,
+				761019FEB98B7BABA01CDC7C78C26DB1 /* Sources */,
+				5F9B5BD56791127F184BC10F14EA9575 /* Frameworks */,
+				7A4E37F067C7147AB9923B73E98E31E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-tvOS";
+			productName = "Alamofire-tvOS";
+			productReference = 7D384ECFAAE59EC3AEF8237E0B853438 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900B2DCFB85C8BD07D239FA3C21F3444 /* Build configuration list for PBXNativeTarget "Alamofire-watchOS" */;
+			buildPhases = (
+				29860E803130FDF18F419F5F719266B4 /* Headers */,
+				153AA5989945EC933E358639440C4234 /* Sources */,
+				5BA48D2EF0E4B4C02BA0683C076AC37C /* Frameworks */,
+				39FC75FBCECC93D299F958BD58F1ACB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-watchOS";
+			productName = "Alamofire-watchOS";
+			productReference = 43DA6DFAA898F949ACBD91D709EF13F8 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACD13889BF64EBB4AB67A711F0E67092 /* Pods-Tina-Demo-watchos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95BB9F4EF845BE6851A6B667A390423 /* Build configuration list for PBXNativeTarget "Pods-Tina-Demo-watchos" */;
+			buildPhases = (
+				6C62B282A85F9444F4E7A1281711ABA9 /* Headers */,
+				27A3A967146CE64164B93F8F80FD2D87 /* Sources */,
+				71F7CF0BE80A6FA27A5DEF0E38C0547F /* Frameworks */,
+				8A55BB6828B37A433C82CC7D7B2BD171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D371E3C7ADDD8B5BB5BCBE1536DFCA71 /* PBXTargetDependency */,
+				29B1F83EA4E428E2236308BC6AC97E1F /* PBXTargetDependency */,
+			);
+			name = "Pods-Tina-Demo-watchos";
+			productName = "Pods-Tina-Demo-watchos";
+			productReference = BE662299DBC468AA4A72C6CAC0CBA12E /* Pods_Tina_Demo_watchos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C43E07377B0C2F159EF77082554141CA /* Pods-Tina-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9228563A9274295B22800CA4496278 /* Build configuration list for PBXNativeTarget "Pods-Tina-Demo" */;
+			buildPhases = (
+				34D4B491F1F7C552395CF9DC8121F608 /* Headers */,
+				E3820E1CE807EFA9D2B94277AA701913 /* Sources */,
+				646A4B821B9659DAE6E07A6B6EA5C360 /* Frameworks */,
+				8512C6BA1125C1234F03FA1B5C7A366F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC4704CFD5D7462CCA3EA4FA662E30D9 /* PBXTargetDependency */,
+				5C098A60CDB008ABAF69F05F50AF4F61 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tina-Demo";
+			productName = "Pods-Tina-Demo";
+			productReference = C568911A2FED805A4F59F743FA1B80FD /* Pods_Tina_Demo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F14039378B833BAAAF978A4AF1F91B61 /* Pods-Tina-Demo-macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED5ACAE02AE45E32F991EBE2546DDB3 /* Build configuration list for PBXNativeTarget "Pods-Tina-Demo-macos" */;
+			buildPhases = (
+				57DDC0D898F3F0EC0F7FA96FA95DA277 /* Headers */,
+				0C7F302555EEC79943B860C2338514FA /* Sources */,
+				431806C2AD3371E7C1C15D14CFB5DCCC /* Frameworks */,
+				34E3DD213A48504BDD6933E612C6B56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B34740AE28F857EA60AF54E69D864EE3 /* PBXTargetDependency */,
+				B689F9BD812BCA2A44EE23EBCD40B756 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tina-Demo-macos";
+			productName = "Pods-Tina-Demo-macos";
+			productReference = 5A4207F9CA12E6432187F329F4D32ED8 /* Pods_Tina_Demo_macos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D831A468CE5C72D64968BE2EBB9C54F4 /* Build configuration list for PBXNativeTarget "Alamofire-iOS" */;
+			buildPhases = (
+				401D52C897B1571ECD38AC9EDE68F988 /* Headers */,
+				B2696AA1EFD0F0D4A58F92326F881614 /* Sources */,
+				15E08A852FA2264E5D27643A2D40BA84 /* Frameworks */,
+				482E7718536D714C6B79FBE30935FBF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alamofire-iOS";
+			productName = "Alamofire-iOS";
+			productReference = 966AA42878212207687E9A2A4DBCD618 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CD4503DDE39D7052563FDC797D4C7789 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */,
+				0EB38A9BFD3E09D12CCDB0592D081EC4 /* Alamofire-macOS */,
+				54EC3BB400983E17DAE5AC71E88176D2 /* Alamofire-tvOS */,
+				66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */,
+				C43E07377B0C2F159EF77082554141CA /* Pods-Tina-Demo */,
+				F14039378B833BAAAF978A4AF1F91B61 /* Pods-Tina-Demo-macos */,
+				4A373FF96B796D26E7326C46F85E103A /* Pods-Tina-Demo-tvos */,
+				ACD13889BF64EBB4AB67A711F0E67092 /* Pods-Tina-Demo-watchos */,
+				4482DB5ECA7D447A5384824BF1CF5903 /* Tina-iOS */,
+				2FFBEF6B5886E5A406577C612CBAC293 /* Tina-macOS */,
+				4D7BE2D353D1A99CA4BF464A60D2925E /* Tina-tvOS */,
+				256CDEE3D1CF9CE52D5391B2AAE7E07E /* Tina-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		072A9A398F68674D424E4D6C362C95D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		195B37BDEAE732A5D5977A812F03E6B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34E3DD213A48504BDD6933E612C6B56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39FC75FBCECC93D299F958BD58F1ACB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE3EB382D36D640A4EE3DC86DD5821F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		482E7718536D714C6B79FBE30935FBF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A2D8A27E9CCF8C1F26E7499284948C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71C032278294C0203654AF3C2983203C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A4E37F067C7147AB9923B73E98E31E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8512C6BA1125C1234F03FA1B5C7A366F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A55BB6828B37A433C82CC7D7B2BD171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E36C650B1B0F2EFD9F1FBC3015BE3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		056A33BE44A35A81FFEB2ABE7DEA9B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6844E93B750B2365AB0A123AE3FF4B6 /* Pods-Tina-Demo-tvos-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C7F302555EEC79943B860C2338514FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A71E3E69F8AEDE8E3E7AC631FB11A3D /* Pods-Tina-Demo-macos-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		153AA5989945EC933E358639440C4234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C923B66CDF05EC1C323AA6F64F0E7DCE /* AFError.swift in Sources */,
+				C27369A5662EB496BE4F3BDDCB21E71E /* Alamofire-watchOS-dummy.m in Sources */,
+				B170920AC7529C675A23F9B19BD3FE3D /* Alamofire.swift in Sources */,
+				9A12F0A305DD81ED9B25273630D1DD04 /* AlamofireExtended.swift in Sources */,
+				AF47DB771C350208FC4B9A73987D664F /* AuthenticationInterceptor.swift in Sources */,
+				EA0B79B25792AB0F4A3ADB0DE2501D7B /* CachedResponseHandler.swift in Sources */,
+				A08635D3C2C017FBBFD05BF964966137 /* Combine.swift in Sources */,
+				DE4716AD8E03D2879DD4A0C66CCBCE5E /* DispatchQueue+Alamofire.swift in Sources */,
+				1357A2B3700493DDFEE8097C5D84AAA2 /* EventMonitor.swift in Sources */,
+				E47BE799D7687B5FC1774932EC69D61C /* HTTPHeaders.swift in Sources */,
+				5031B03E8E3BF0A8E0F5D7DABDF8E833 /* HTTPMethod.swift in Sources */,
+				81FC7B98BC0CDEAF0A781496744C8AF0 /* MultipartFormData.swift in Sources */,
+				8F8122B5355EBB483748741BC9C8948C /* MultipartUpload.swift in Sources */,
+				EFA869FB5F0371066AC86639473A5CD2 /* NetworkReachabilityManager.swift in Sources */,
+				0DCD3EC0C9D64532EBFE999D9D623527 /* Notifications.swift in Sources */,
+				AA8BABB9A5F8A5178688B533C4E3B3AA /* OperationQueue+Alamofire.swift in Sources */,
+				9599E1D0AC10FAFED7166F1B764D98B9 /* ParameterEncoder.swift in Sources */,
+				1EA6897FAECFE380E40D7D23C1FDF228 /* ParameterEncoding.swift in Sources */,
+				C4B1C9CCE109DBC53273C3A5CE492B87 /* Protected.swift in Sources */,
+				A467DCFF6B8658AB5196273345667C57 /* RedirectHandler.swift in Sources */,
+				0807A42F36E6D16E2D26E6211638479A /* Request.swift in Sources */,
+				5C5E7D90E32B81CE550DC47950FD2766 /* RequestInterceptor.swift in Sources */,
+				C98DDF1CE4A4DEE86B9E0AC61ECFFEC9 /* RequestTaskMap.swift in Sources */,
+				A19765CCD7BBE9321219164B09E89339 /* Response.swift in Sources */,
+				8EF87A40E39D44AF006CE7745FE98B68 /* ResponseSerialization.swift in Sources */,
+				A01DD03E0E6075B10A7EF6C5959E4256 /* Result+Alamofire.swift in Sources */,
+				D58108AC022FDCE975EE2B3C1891AB12 /* RetryPolicy.swift in Sources */,
+				227E12B0725AEB031D6CAF2F6245B3CB /* ServerTrustEvaluation.swift in Sources */,
+				52300CB17E3A22001BB0C8045B712537 /* Session.swift in Sources */,
+				8A05914D2AFEE0450E874B47C1AA7F74 /* SessionDelegate.swift in Sources */,
+				DFCAFE1AEB89D26EC74B4C2C99F66EEC /* StringEncoding+Alamofire.swift in Sources */,
+				021CFFF4D370467ADB1E5B72ED35A426 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				6AB9CDFE231B8BBE2F7DFAEBDA541A3D /* URLEncodedFormEncoder.swift in Sources */,
+				684DCC859A74B67D6DFE235251F023E0 /* URLRequest+Alamofire.swift in Sources */,
+				867BA049CC5F8C673CF3DBAB31464FD9 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				43A990C0A7AF48551C7C201AE0539E5C /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27A3A967146CE64164B93F8F80FD2D87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F224DDED13E6B79697856B01A5453F92 /* Pods-Tina-Demo-watchos-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39007C3A5CEC07534531E4FAA3FF93D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				573A893EA99886A94816D29CD97D26EE /* AFError.swift in Sources */,
+				3C1869CB1C00D2EBDC850F0FBDCF1470 /* Alamofire-macOS-dummy.m in Sources */,
+				C5FC6C58113FBDA0C68BFF38C0CA4234 /* Alamofire.swift in Sources */,
+				12B2C88E3B75FE39CD5E1F7DB6EDCC8D /* AlamofireExtended.swift in Sources */,
+				A09674DC285B37679EAEAF2BC75661A8 /* AuthenticationInterceptor.swift in Sources */,
+				0EE90A1107404F58F89FA6DCF3C84453 /* CachedResponseHandler.swift in Sources */,
+				1380680CC41ED45A65143B005920951E /* Combine.swift in Sources */,
+				2A7922E04F7296BF94CCE9B461031AF5 /* DispatchQueue+Alamofire.swift in Sources */,
+				116661A446066178C22D37120FA18703 /* EventMonitor.swift in Sources */,
+				B6431EB8594531AEF1FF701742B9F7E4 /* HTTPHeaders.swift in Sources */,
+				27F18112BA67F0F0E978878B179FD01A /* HTTPMethod.swift in Sources */,
+				22100167967112DDCBD78B2592D27127 /* MultipartFormData.swift in Sources */,
+				D59B6A02B2BE66B39633B3F5363B8C31 /* MultipartUpload.swift in Sources */,
+				10F69629388A847FE7985C6DFB07CA41 /* NetworkReachabilityManager.swift in Sources */,
+				06B74D7DAAABB1D39E5250DBC743C2CC /* Notifications.swift in Sources */,
+				87931361B8FD7984470C9E8199ED46F7 /* OperationQueue+Alamofire.swift in Sources */,
+				78410A7DD8442ED62D0C0BC431B63356 /* ParameterEncoder.swift in Sources */,
+				B8907E403AA9678A663DE2EF7EFA87C4 /* ParameterEncoding.swift in Sources */,
+				8513B53FD67C5EFBDC8F7B00997097B2 /* Protected.swift in Sources */,
+				24FB756DFF4459E44D221D56BD37BE65 /* RedirectHandler.swift in Sources */,
+				F80921CD503D8E2C76373F9A100EB12E /* Request.swift in Sources */,
+				78E8F945AA70556B7F3004A3541975C9 /* RequestInterceptor.swift in Sources */,
+				7E2E1993D6140C5F17B485E7AEABA842 /* RequestTaskMap.swift in Sources */,
+				71150F9A4C02E3F807060C1687278298 /* Response.swift in Sources */,
+				7E8C43EF585915B071A5195C52BC1558 /* ResponseSerialization.swift in Sources */,
+				334E09394A767283385E78D4543EAFDB /* Result+Alamofire.swift in Sources */,
+				3BFD8BE43CDFFE9E40CEEEBDC82A64F9 /* RetryPolicy.swift in Sources */,
+				547D548442CB33486ED6B99FE82DC48F /* ServerTrustEvaluation.swift in Sources */,
+				FA8EA0A76BBF2127F39DD0575026DBB6 /* Session.swift in Sources */,
+				3D68F65A13564CB33A9D340B8097117C /* SessionDelegate.swift in Sources */,
+				AEF01B2AE6A42BD3FF87C977A3BE0E24 /* StringEncoding+Alamofire.swift in Sources */,
+				AA3A445ABF2633553A833D8759058A7A /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				2A68D12D903A8670C8C41EA4D03F462F /* URLEncodedFormEncoder.swift in Sources */,
+				089CD00BB5F3610EAD2B6ACF555EA886 /* URLRequest+Alamofire.swift in Sources */,
+				53C58788F09225E72330A6ABA7D44312 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				61648151DF9C949D6399E4ED54528FBA /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		746B49734EE469EDD96B4CDB8EE9579F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43F51943E2472620B2D9836AA3C2CF6 /* Error.swift in Sources */,
+				C11BF1565B52B41BCFA933BDB569C48A /* Handle.swift in Sources */,
+				B44CF7BC1FA2E090C6C29CE87ED3D45B /* Header.swift in Sources */,
+				B264BF709E227BE6B4F3AA5E2B9756B7 /* JSONable.swift in Sources */,
+				3D4AC9C1B91AA1DC13370581C7938B6A /* Method.swift in Sources */,
+				EF260FAE1FBF4DBAA8C76FBE04FC6E8B /* Parameters.swift in Sources */,
+				A5B5ED01777A8197B865B136C18464EA /* Request.swift in Sources */,
+				7E14F979F478925E2DC1EA87E10FFAAA /* Response.swift in Sources */,
+				EEA0A7F9E891BA8AEB2CC058C921FC05 /* Session.swift in Sources */,
+				E089E2C5B2F64AC4441700B9D4E49B84 /* Task.swift in Sources */,
+				734C5A1487F525DFBECDC5B1AAB56455 /* Tina-tvOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7560A62A3C9533D1A7E31899B01DB036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F0BF45EAF305337B7CC3CB9F825A01 /* Error.swift in Sources */,
+				BBF2F663E33230AF1478347F0786EABB /* Handle.swift in Sources */,
+				A29111C42F3500D184B18C32B1F9C664 /* Header.swift in Sources */,
+				C6194C229E299F4E65B9331379E18930 /* JSONable.swift in Sources */,
+				A3B3B8B4F67211E494627D1088119A4E /* Method.swift in Sources */,
+				FE194ED9CFE40A6CB23870ACD0027E72 /* Parameters.swift in Sources */,
+				AA1B53D6A0801D9969749110F6EEE67B /* Request.swift in Sources */,
+				27E65BED135F5EF5C74CBB7B517D4CA9 /* Response.swift in Sources */,
+				08088078FB32AABDB6D555914BABF3E3 /* Session.swift in Sources */,
+				E4902A5468DA23B9F2C0FDCD51321B0C /* Task.swift in Sources */,
+				1F08C4EC2933F35D68829535B78595ED /* Tina-macOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761019FEB98B7BABA01CDC7C78C26DB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F684DE81B91BFFBAFAA4AD3275B24A5 /* AFError.swift in Sources */,
+				89132847BC6B1A772A6C20BC47D90885 /* Alamofire-tvOS-dummy.m in Sources */,
+				76DC2549CA35A4251933432DA3ED4483 /* Alamofire.swift in Sources */,
+				F54DC4D154001C9F79B8E8CFCA4C51D2 /* AlamofireExtended.swift in Sources */,
+				5BAE3F8B34023EA19FF65A288109EBC3 /* AuthenticationInterceptor.swift in Sources */,
+				30A05C639A06979932525E681C78D2FD /* CachedResponseHandler.swift in Sources */,
+				1E42C2A764F15F9FAE944FC116B7AFF1 /* Combine.swift in Sources */,
+				6CFEC7886E753A29EE7DC007471F156B /* DispatchQueue+Alamofire.swift in Sources */,
+				A5C4D20A6EAEA6C8E1693620389CFDB2 /* EventMonitor.swift in Sources */,
+				BD41C43E99DEBB31F7A3AE0234489802 /* HTTPHeaders.swift in Sources */,
+				040BD86850CAB9ED5F160C9D3F934F75 /* HTTPMethod.swift in Sources */,
+				EC82BDF3199B388DF4B4A1AE4F95FC51 /* MultipartFormData.swift in Sources */,
+				4E72116E296AA94A3112C60EA84D676D /* MultipartUpload.swift in Sources */,
+				F6DE63E4A04D8EF320FC04122A104DC7 /* NetworkReachabilityManager.swift in Sources */,
+				4F7272FE26C7366C178849AC6C7DE97B /* Notifications.swift in Sources */,
+				6CB04ADC37190554AF5C0896A03E9DA4 /* OperationQueue+Alamofire.swift in Sources */,
+				D9543B5E0BE14BEDF4614542B7AD9C31 /* ParameterEncoder.swift in Sources */,
+				BA26EE3C9EBB8EE7E33DFF6B2DB80193 /* ParameterEncoding.swift in Sources */,
+				1B7D549F9AAC047F6C9CA5C22E16C677 /* Protected.swift in Sources */,
+				70512EC2F5E71E4E146BDFDF763B27BB /* RedirectHandler.swift in Sources */,
+				12AB7D64B187A897E07EA9056B386446 /* Request.swift in Sources */,
+				DDF5EB3227037853C7EF61AA64FDA954 /* RequestInterceptor.swift in Sources */,
+				060CC0F0C40104A002A1340280CFF0D2 /* RequestTaskMap.swift in Sources */,
+				1AE7BF4AE162BCDFCD3994EAA8D29A43 /* Response.swift in Sources */,
+				54E7291F587FB9188D83A43EE1B60497 /* ResponseSerialization.swift in Sources */,
+				5C6B4200BEEF51C242A5A0DE7E2A9AA0 /* Result+Alamofire.swift in Sources */,
+				8F88C773F4BB05C243327EF692EDAD73 /* RetryPolicy.swift in Sources */,
+				0074B50E1293D4350F50BDB3B149D0AE /* ServerTrustEvaluation.swift in Sources */,
+				63C62134F77B66F62C7BAB7766377B6C /* Session.swift in Sources */,
+				BB82110D8113A3AA75C24D4E11D05945 /* SessionDelegate.swift in Sources */,
+				C696335A73922F2F3C50DCD5BD07FAD0 /* StringEncoding+Alamofire.swift in Sources */,
+				7C81FD05845F1A556BC06A1CE075B39E /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				5BC7CBCD2C9E2BC5E8E42632EE2D4254 /* URLEncodedFormEncoder.swift in Sources */,
+				10D1B2EA4185F0BB9C5F94FDFD9E77D6 /* URLRequest+Alamofire.swift in Sources */,
+				69EE9DA82BA321C75CF0D6A4097ABCEB /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				DFE876556AC9261AE726DCB9D5EFEBDE /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A262B2E5EEBC9F133D96A5B9B07825C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C234687084EC327A79BAFAAA35F693C /* Error.swift in Sources */,
+				2326DF70B8D418AE1095B06FF3084862 /* Handle.swift in Sources */,
+				D27AE7A859C71005D1AB217B869F718F /* Header.swift in Sources */,
+				C966174C73861720023B5E2A98343C72 /* JSONable.swift in Sources */,
+				6597E4FEF1DCD7A473970E15E5FAA28A /* Method.swift in Sources */,
+				35A3B6B55E91C6758E93332A733F0AE1 /* Parameters.swift in Sources */,
+				6F754457810637CA11BF12150E05B4AA /* Request.swift in Sources */,
+				0A3F05816BFAB9C4F82D85E4CF977097 /* Response.swift in Sources */,
+				E0FD2DDAAD05BB31C2627CDA15C3A758 /* Session.swift in Sources */,
+				754161E7A6222625847E543C2C00DA12 /* Task.swift in Sources */,
+				C1CE41D0D9E62BDC147A9817A4D6A940 /* Tina-watchOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C862EEAA3B4D2B3BE40D357F99D779D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8727E9E6170D542DC4EB3780E2E5E83D /* Error.swift in Sources */,
+				9BB8325061C9B917102968FD0EF0A2EB /* Handle.swift in Sources */,
+				C89D235FBB981097169D9D4752CA103B /* Header.swift in Sources */,
+				16E4D2ABAFBDFCDB3E19175AB21285CF /* JSONable.swift in Sources */,
+				0626BDB37864D645428A02F6A698EC79 /* Method.swift in Sources */,
+				08E9854BD88EB4BFFB15B13A77A689B9 /* Parameters.swift in Sources */,
+				0D88495DEDF9EAE6B71B14EA7BB86641 /* Request.swift in Sources */,
+				888B1ED946E10EBA50146E5094C64EF4 /* Response.swift in Sources */,
+				D52485594D0A1442DED42D3E5B4B5525 /* Session.swift in Sources */,
+				A1DE9592AC5821D1C581FFAB8E29DDCA /* Task.swift in Sources */,
+				2055536D92B7B482ABD9BC4FB80F8327 /* Tina-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2696AA1EFD0F0D4A58F92326F881614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224A3831D5F30306D63490D3AAC5EB72 /* AFError.swift in Sources */,
+				5D78F1EE170DC51E72116B77CA03A8C5 /* Alamofire-iOS-dummy.m in Sources */,
+				3000BC56A245FD0E0A6093569107ACAE /* Alamofire.swift in Sources */,
+				CF5605FFD341484A088D7FD6720CC732 /* AlamofireExtended.swift in Sources */,
+				75B7B3E189EFF69DDE3EF8C05FE3FB12 /* AuthenticationInterceptor.swift in Sources */,
+				F32331D203FD7C536F635E8673FE3EC8 /* CachedResponseHandler.swift in Sources */,
+				2286144F235F66AC2ED13065E9F7C38D /* Combine.swift in Sources */,
+				5BBE51F0D19A297632D18C47E0753F31 /* DispatchQueue+Alamofire.swift in Sources */,
+				B6D253C12A036647005A146817A0EBD8 /* EventMonitor.swift in Sources */,
+				8168D0B5C11E20A5E639FC7AE63CB42A /* HTTPHeaders.swift in Sources */,
+				BEB8C91DDE59124052CDCB3F2D824301 /* HTTPMethod.swift in Sources */,
+				C50096A8822C2F9D174B295A968CFB1C /* MultipartFormData.swift in Sources */,
+				005E4CD746376E07E95D05310B14EFCC /* MultipartUpload.swift in Sources */,
+				BC16C5107A9A754DB38763FB41A46DAF /* NetworkReachabilityManager.swift in Sources */,
+				6A9CD63B91A5E0E6E8B92D5651877667 /* Notifications.swift in Sources */,
+				9C922C38CE256A9380238167E8B3E9AE /* OperationQueue+Alamofire.swift in Sources */,
+				F7B54F15F889CAD34B26D94416DEB3F6 /* ParameterEncoder.swift in Sources */,
+				AAF07CDE26AAA751F47EDD2EC316825D /* ParameterEncoding.swift in Sources */,
+				93860A6C290F24CCF2ECCF51ED82F947 /* Protected.swift in Sources */,
+				0698C7160BD2D591C033F1BF8776440A /* RedirectHandler.swift in Sources */,
+				6B825AB3F4B2EDF9AF19766017C6CFB6 /* Request.swift in Sources */,
+				810E58544571CC4962153B84838E345F /* RequestInterceptor.swift in Sources */,
+				44B162810AE7981C3AADF2DEF488917A /* RequestTaskMap.swift in Sources */,
+				732B2AA38C6A373847FCC12470CA35AD /* Response.swift in Sources */,
+				486667B05AD4F8E038CC6E40784DF464 /* ResponseSerialization.swift in Sources */,
+				E5FC0EF1F0CBBE6A74D96889ECE36C6E /* Result+Alamofire.swift in Sources */,
+				088D0AE060872BE907946BAAB3BA1841 /* RetryPolicy.swift in Sources */,
+				3BD65D50EDD6454905E31B20D5CF2AD2 /* ServerTrustEvaluation.swift in Sources */,
+				EB442164D75088102C93AC966FFE49EC /* Session.swift in Sources */,
+				0FF61CFA3A1773FA0691A466CB028102 /* SessionDelegate.swift in Sources */,
+				ECA5B1F0B3C674D9C6D1823B501B7442 /* StringEncoding+Alamofire.swift in Sources */,
+				398AA130556567DCA72B4354545F0C9B /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				C33A2068C4278176A7ED847F8C8BA508 /* URLEncodedFormEncoder.swift in Sources */,
+				DF160BB9EFA0CC8CC10CFEF171533D3E /* URLRequest+Alamofire.swift in Sources */,
+				AC4F4A4FA1DA7CE0D25B284BD593456B /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				048D35008FF806E66A6A3E1776F60A77 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3820E1CE807EFA9D2B94277AA701913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACE2A2C0B93BB21C4703F48972ABCC7 /* Pods-Tina-Demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29B1F83EA4E428E2236308BC6AC97E1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Tina-watchOS";
+			target = 256CDEE3D1CF9CE52D5391B2AAE7E07E /* Tina-watchOS */;
+			targetProxy = AE00F7C15747DF986699B271DBD51FE7 /* PBXContainerItemProxy */;
+		};
+		2C6978E1F2E077CCAC983B41394AD000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Tina-tvOS";
+			target = 4D7BE2D353D1A99CA4BF464A60D2925E /* Tina-tvOS */;
+			targetProxy = 098B0A9CDF71BB09CBDCBDD0F453E086 /* PBXContainerItemProxy */;
+		};
+		434499EA3D6AE1FEBF59C2255C361350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-tvOS";
+			target = 54EC3BB400983E17DAE5AC71E88176D2 /* Alamofire-tvOS */;
+			targetProxy = A2D75980D229346343A2309DD8D370F5 /* PBXContainerItemProxy */;
+		};
+		5C098A60CDB008ABAF69F05F50AF4F61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Tina-iOS";
+			target = 4482DB5ECA7D447A5384824BF1CF5903 /* Tina-iOS */;
+			targetProxy = 3DE41D2927CB8B2DA5C2B46D6069F087 /* PBXContainerItemProxy */;
+		};
+		632F1D339E3C61BB3A42CF56B53E1200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-macOS";
+			target = 0EB38A9BFD3E09D12CCDB0592D081EC4 /* Alamofire-macOS */;
+			targetProxy = 64871CF190EB0946347D3BE1E7719C01 /* PBXContainerItemProxy */;
+		};
+		79820138A27A3C1116E42381FEFB8E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-watchOS";
+			target = 66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */;
+			targetProxy = 991BFF0917B9FD38110BBEB98C4E35BE /* PBXContainerItemProxy */;
+		};
+		B34740AE28F857EA60AF54E69D864EE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-macOS";
+			target = 0EB38A9BFD3E09D12CCDB0592D081EC4 /* Alamofire-macOS */;
+			targetProxy = A7804B5A3A8181EE7395EE914288FC60 /* PBXContainerItemProxy */;
+		};
+		B689F9BD812BCA2A44EE23EBCD40B756 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Tina-macOS";
+			target = 2FFBEF6B5886E5A406577C612CBAC293 /* Tina-macOS */;
+			targetProxy = 0EA4CAE2AEED02776DC66E249AB62F33 /* PBXContainerItemProxy */;
+		};
+		C496BF2F326D54F1DB174DE000F30B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-tvOS";
+			target = 54EC3BB400983E17DAE5AC71E88176D2 /* Alamofire-tvOS */;
+			targetProxy = 77BAB68D813AFA3C2A09266F3230FAF4 /* PBXContainerItemProxy */;
+		};
+		CC4704CFD5D7462CCA3EA4FA662E30D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-iOS";
+			target = FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */;
+			targetProxy = 6EDE96AC90FCEF2ACDCF50B3B41BB100 /* PBXContainerItemProxy */;
+		};
+		D371E3C7ADDD8B5BB5BCBE1536DFCA71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-watchOS";
+			target = 66F51BC925FD5FB829E8D422C690BDF0 /* Alamofire-watchOS */;
+			targetProxy = A7012B8B028D7868D15802BF34974AEA /* PBXContainerItemProxy */;
+		};
+		E6223327BF989B2DBC267B5A0EF3E81E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-iOS";
+			target = FD8828BFC368157226E204A32CD5B6DE /* Alamofire-iOS */;
+			targetProxy = EA8A0647DCB82A2716EE430F60C1EC69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E8B8EDF1D43408F73FD8B3C95BA2EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 10.10;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		293EDAF71380F203232F571A0BCA1775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99243A06CF272EDFEBB9A89F33291D49 /* Tina-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tina-iOS/Tina-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tina-iOS/Tina-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tina-iOS/Tina-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Tina;
+				PRODUCT_NAME = Tina;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C52062D7233F54433E3F5D145D2992F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6DC8829776AEA37DC933928F3AEF92C /* Pods-Tina-Demo-macos.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tina-Demo-macos/Pods-Tina-Demo-macos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tina-Demo-macos/Pods-Tina-Demo-macos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2E689371727A6D9ADD169E7DE314A5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE1A853DE1FC3DE8CF2EAC654308241 /* Alamofire-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-macOS/Alamofire-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-macOS/Alamofire-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Alamofire-macOS/Alamofire-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		31EB359C97561AE063839C0D557DAF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC09B0319C590AB70DA504538A911558 /* Alamofire-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44D627A77AC48126D4A70FFF5B95598A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB60E24A0022269AAB589BB49223BFE /* Pods-Tina-Demo-watchos.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tina-Demo-watchos/Pods-Tina-Demo-watchos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tina-Demo-watchos/Pods-Tina-Demo-watchos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		638D24D0607FBB58C2E4674F21E638A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 938F64B1C1C368D08A55315B91C818AE /* Pods-Tina-Demo-tvos.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tina-Demo-tvos/Pods-Tina-Demo-tvos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tina-Demo-tvos/Pods-Tina-Demo-tvos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.10;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6EC8C9D91FB949AF1A09C59CCD84B83A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8D061A875044510A72229AA78BE17C /* Pods-Tina-Demo-watchos.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tina-Demo-watchos/Pods-Tina-Demo-watchos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tina-Demo-watchos/Pods-Tina-Demo-watchos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		768EBB8F008E1DE5C26AE52C22055731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B3CE5884DC8765B4AC41A656958E0D /* Alamofire-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		7B3FDF5688CE234CE0BDB06DCC41E302 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D30DBD1141FDE5A589ABF7D18BDA68AB /* Tina-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tina-watchOS/Tina-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tina-watchOS/Tina-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tina-watchOS/Tina-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Tina;
+				PRODUCT_NAME = Tina;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		7D5A649C380B3F04762D8467FBA09CB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C07A51DE5D63E4BC5AC6BF63642F6015 /* Pods-Tina-Demo-tvos.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tina-Demo-tvos/Pods-Tina-Demo-tvos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tina-Demo-tvos/Pods-Tina-Demo-tvos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.10;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A210CD2A873149AD203C0DBE9FF72C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75966F993EDA5E1ED2F8D34C6B6051A8 /* Alamofire-tvOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-tvOS/Alamofire-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-tvOS/Alamofire-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-tvOS/Alamofire-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3104964767114F0F97A8374810363CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF6965E1F798623BD2DEE8F536F7E94 /* Tina-tvOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tina-tvOS/Tina-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tina-tvOS/Tina-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tina-tvOS/Tina-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Tina;
+				PRODUCT_NAME = Tina;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE0874B25C2050538A8C58ADB4FD2B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5CC6C55B496EBEFB726C75089A9064B /* Pods-Tina-Demo-macos.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tina-Demo-macos/Pods-Tina-Demo-macos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tina-Demo-macos/Pods-Tina-Demo-macos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFBD0738A4A5C1F87751FFBBF43F85D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F3F4D0D8BC29DAFE81100847E113FE /* Pods-Tina-Demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tina-Demo/Pods-Tina-Demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tina-Demo/Pods-Tina-Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B446646B1E2D97370ADF8D62CDD5E144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 10.10;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		B6AED74AF037A862E1E706F70D94BD54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E480FB06AEF204D403360F93E4B9D42B /* Tina-macOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tina-macOS/Tina-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tina-macOS/Tina-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Tina-macOS/Tina-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Tina;
+				PRODUCT_NAME = Tina;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5733F46AC7DD7CAC163CDFB2259FA39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E305ADEE2ADD1C104AA59329F08DD872 /* Pods-Tina-Demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Tina-Demo/Pods-Tina-Demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tina-Demo/Pods-Tina-Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DBAC9692F96993A5614ABF71E1834147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738B981299D4F987F55A71A3B9DE896A /* Tina-tvOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tina-tvOS/Tina-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tina-tvOS/Tina-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tina-tvOS/Tina-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Tina;
+				PRODUCT_NAME = Tina;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE8E4D924A1690A68D1A2FFE23834E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB9B84ECF5402E0E00B9278070144AF /* Tina-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tina-macOS/Tina-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tina-macOS/Tina-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Tina-macOS/Tina-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Tina;
+				PRODUCT_NAME = Tina;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DED5CDC02ED2A986EC6FDE4CD30FB0A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 708E7E3B0B6A25CDD88F9BFA684FE707 /* Tina-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tina-iOS/Tina-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tina-iOS/Tina-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tina-iOS/Tina-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Tina;
+				PRODUCT_NAME = Tina;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0956B7201E4E8E22B2F6B5182E2A772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF9A03AB2F4B29D80DBEDE532FBF993 /* Alamofire-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-iOS/Alamofire-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-iOS/Alamofire-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0C1137EFBB64D0CDDC08A34AE7B1423 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314BD75DEE7A89579BE97DE54C32EE96 /* Alamofire-macOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-macOS/Alamofire-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-macOS/Alamofire-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Alamofire-macOS/Alamofire-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F457ABEF88EB1336047942665869E431 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B63F5F5E1AFE757E722208D51414A81 /* Alamofire-tvOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-tvOS/Alamofire-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-tvOS/Alamofire-tvOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-tvOS/Alamofire-tvOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6B25C9A32B4F3FAC0E6D2D90EE7A72D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC91EB3768B58A6564D68B4FFE37F2C2 /* Alamofire-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire-watchOS/Alamofire-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		FD4595C67B21C8BFAE59943B24715DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B47F0BF2BBF8C5475EC9A5463B0B4D /* Tina-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tina-watchOS/Tina-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tina-watchOS/Tina-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tina-watchOS/Tina-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = Tina;
+				PRODUCT_NAME = Tina;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39B6C09117EBC457870481C378E44936 /* Build configuration list for PBXNativeTarget "Pods-Tina-Demo-tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638D24D0607FBB58C2E4674F21E638A6 /* Debug */,
+				7D5A649C380B3F04762D8467FBA09CB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9228563A9274295B22800CA4496278 /* Build configuration list for PBXNativeTarget "Pods-Tina-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFBD0738A4A5C1F87751FFBBF43F85D4 /* Debug */,
+				D5733F46AC7DD7CAC163CDFB2259FA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED5ACAE02AE45E32F991EBE2546DDB3 /* Build configuration list for PBXNativeTarget "Pods-Tina-Demo-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0874B25C2050538A8C58ADB4FD2B7F /* Debug */,
+				2C52062D7233F54433E3F5D145D2992F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B446646B1E2D97370ADF8D62CDD5E144 /* Debug */,
+				1E8B8EDF1D43408F73FD8B3C95BA2EA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EA6ABD5D49121087EA2C3BED0327EA9 /* Build configuration list for PBXNativeTarget "Alamofire-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A210CD2A873149AD203C0DBE9FF72C3 /* Debug */,
+				F457ABEF88EB1336047942665869E431 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7306B0E7F7C4317071533ED35EFDD9AD /* Build configuration list for PBXNativeTarget "Tina-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B3FDF5688CE234CE0BDB06DCC41E302 /* Debug */,
+				FD4595C67B21C8BFAE59943B24715DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		900B2DCFB85C8BD07D239FA3C21F3444 /* Build configuration list for PBXNativeTarget "Alamofire-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768EBB8F008E1DE5C26AE52C22055731 /* Debug */,
+				F6B25C9A32B4F3FAC0E6D2D90EE7A72D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8BAFA6DE1E2D80B41DFB227B105DE6 /* Build configuration list for PBXNativeTarget "Alamofire-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E689371727A6D9ADD169E7DE314A5A7 /* Debug */,
+				F0C1137EFBB64D0CDDC08A34AE7B1423 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3BAA4D5C39925C6339A383B0B9251BC /* Build configuration list for PBXNativeTarget "Tina-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBAC9692F96993A5614ABF71E1834147 /* Debug */,
+				A3104964767114F0F97A8374810363CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDB07EBD4951270A31FA878C360F263 /* Build configuration list for PBXNativeTarget "Tina-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE8E4D924A1690A68D1A2FFE23834E3D /* Debug */,
+				B6AED74AF037A862E1E706F70D94BD54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D831A468CE5C72D64968BE2EBB9C54F4 /* Build configuration list for PBXNativeTarget "Alamofire-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0956B7201E4E8E22B2F6B5182E2A772 /* Debug */,
+				31EB359C97561AE063839C0D557DAF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95BB9F4EF845BE6851A6B667A390423 /* Build configuration list for PBXNativeTarget "Pods-Tina-Demo-watchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EC8C9D91FB949AF1A09C59CCD84B83A /* Debug */,
+				44D627A77AC48126D4A70FFF5B95598A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0C9D68BA1C3C1EA373C351B315F154C /* Build configuration list for PBXNativeTarget "Tina-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED5CDC02ED2A986EC6FDE4CD30FB0A5 /* Debug */,
+				293EDAF71380F203232F571A0BCA1775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

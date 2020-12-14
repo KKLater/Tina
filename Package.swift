@@ -10,7 +10,7 @@ let package = Package(
         .library(name: "Tina", targets: ["Tina"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0"))
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.4.0"))
     ],
     targets: [
         .target(name: "Tina", dependencies: ["Alamofire"]),

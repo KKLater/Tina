@@ -1,0 +1,6 @@
+framework module Pods_Tina_Demo_macos {
+  umbrella header "Pods-Tina-Demo-macos-umbrella.h"
+
+  export *
+  module * { export * }
+}
