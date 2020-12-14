@@ -98,14 +98,14 @@ public extension Requestable where Self: Sessionable {
             request.bodyParameters = parameters()
         }
     
-        /// requestAdapters
+        /// requestHandlers
         var allRequestHandlers = Self.requestHandlers()
         if let tHandlers = requestHandlers {
             allRequestHandlers += tHandlers
         }
         request.requestHandlers = allRequestHandlers
         
-        /// responseAdapters
+        /// responseHandlers
         var allResponseHandlers = Self.responseHandlers()
         if let tHandlers = responseHandlers {
             allResponseHandlers += tHandlers

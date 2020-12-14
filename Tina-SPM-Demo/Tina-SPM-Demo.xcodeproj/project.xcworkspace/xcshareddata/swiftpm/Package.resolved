@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "9e0328127dfb801cefe8ac53a13c0c90a7770448",
+          "version": "5.4.0"
+        }
+      },
+      {
+        "package": "Tina",
+        "repositoryURL": "https://github.com/KKLater/Tina.git",
+        "state": {
+          "branch": "dev",
+          "revision": "4760421296de0887169eb9ea90cef7a9e6707641",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

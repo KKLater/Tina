@@ -1,0 +1,1101 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AEDA08E2587782800121C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA08D2587782800121C5B /* AppDelegate.swift */; };
+		1AEDA0902587782800121C5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA08F2587782800121C5B /* SceneDelegate.swift */; };
+		1AEDA0922587782800121C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0912587782800121C5B /* ViewController.swift */; };
+		1AEDA0952587782800121C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA0932587782800121C5B /* Main.storyboard */; };
+		1AEDA0972587782800121C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA0962587782800121C5B /* Assets.xcassets */; };
+		1AEDA09A2587782800121C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA0982587782800121C5B /* LaunchScreen.storyboard */; };
+		1AEDA0A42587811100121C5B /* Tina in Frameworks */ = {isa = PBXBuildFile; productRef = 1AEDA0A32587811100121C5B /* Tina */; };
+		1AEDA0AC2587813900121C5B /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A72587813900121C5B /* GetRequest.swift */; };
+		1AEDA0AD2587813900121C5B /* BinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A82587813900121C5B /* BinTest.swift */; };
+		1AEDA0AE2587813900121C5B /* Binable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A92587813900121C5B /* Binable.swift */; };
+		1AEDA0AF2587813900121C5B /* HeadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0AA2587813900121C5B /* HeadRequest.swift */; };
+		1AEDA0B02587813900121C5B /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0AB2587813900121C5B /* PostRequest.swift */; };
+		1AEDA0B92587817100121C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0B82587817100121C5B /* AppDelegate.swift */; };
+		1AEDA0BB2587817100121C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0BA2587817100121C5B /* ViewController.swift */; };
+		1AEDA0BD2587817100121C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA0BC2587817100121C5B /* Assets.xcassets */; };
+		1AEDA0C02587817100121C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA0BE2587817100121C5B /* Main.storyboard */; };
+		1AEDA0C82587818900121C5B /* Binable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A92587813900121C5B /* Binable.swift */; };
+		1AEDA0C92587818900121C5B /* HeadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0AA2587813900121C5B /* HeadRequest.swift */; };
+		1AEDA0CA2587818900121C5B /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A72587813900121C5B /* GetRequest.swift */; };
+		1AEDA0CB2587818900121C5B /* BinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A82587813900121C5B /* BinTest.swift */; };
+		1AEDA0CC2587818900121C5B /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0AB2587813900121C5B /* PostRequest.swift */; };
+		1AEDA0D1258781C400121C5B /* Tina in Frameworks */ = {isa = PBXBuildFile; productRef = 1AEDA0D0258781C400121C5B /* Tina */; };
+		1AEDA0DB258781E800121C5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0DA258781E800121C5B /* AppDelegate.swift */; };
+		1AEDA0DD258781E800121C5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0DC258781E800121C5B /* ViewController.swift */; };
+		1AEDA0E0258781E800121C5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA0DE258781E800121C5B /* Main.storyboard */; };
+		1AEDA0E2258781E800121C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA0E1258781E800121C5B /* Assets.xcassets */; };
+		1AEDA0E5258781E800121C5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA0E3258781E800121C5B /* LaunchScreen.storyboard */; };
+		1AEDA0EE258781F000121C5B /* Tina in Frameworks */ = {isa = PBXBuildFile; productRef = 1AEDA0ED258781F000121C5B /* Tina */; };
+		1AEDA0EF258781F400121C5B /* Binable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A92587813900121C5B /* Binable.swift */; };
+		1AEDA0F0258781F400121C5B /* HeadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0AA2587813900121C5B /* HeadRequest.swift */; };
+		1AEDA0F1258781F400121C5B /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A72587813900121C5B /* GetRequest.swift */; };
+		1AEDA0F2258781F400121C5B /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0AB2587813900121C5B /* PostRequest.swift */; };
+		1AEDA0F3258781F400121C5B /* BinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A82587813900121C5B /* BinTest.swift */; };
+		1AEDA0FD2587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1AEDA0FC2587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1AEDA1032587821B00121C5B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA1012587821B00121C5B /* Interface.storyboard */; };
+		1AEDA1052587821B00121C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA1042587821B00121C5B /* Assets.xcassets */; };
+		1AEDA10C2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1AEDA10B2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1AEDA1112587821C00121C5B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA1102587821C00121C5B /* InterfaceController.swift */; };
+		1AEDA1132587821C00121C5B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA1122587821C00121C5B /* ExtensionDelegate.swift */; };
+		1AEDA1152587821C00121C5B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA1142587821C00121C5B /* NotificationController.swift */; };
+		1AEDA1172587821C00121C5B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA1162587821C00121C5B /* ComplicationController.swift */; };
+		1AEDA1192587821C00121C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDA1182587821C00121C5B /* Assets.xcassets */; };
+		1AEDA12D2587822300121C5B /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0AB2587813900121C5B /* PostRequest.swift */; };
+		1AEDA12E2587822300121C5B /* HeadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0AA2587813900121C5B /* HeadRequest.swift */; };
+		1AEDA12F2587822300121C5B /* BinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A82587813900121C5B /* BinTest.swift */; };
+		1AEDA1302587822300121C5B /* Binable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A92587813900121C5B /* Binable.swift */; };
+		1AEDA1312587822300121C5B /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDA0A72587813900121C5B /* GetRequest.swift */; };
+		1AEDA1392587822E00121C5B /* Tina in Frameworks */ = {isa = PBXBuildFile; productRef = 1AEDA1382587822E00121C5B /* Tina */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AEDA0FE2587821B00121C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AEDA0822587782800121C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AEDA0FB2587821B00121C5B;
+			remoteInfo = "Tina-SPM-Demo-watchos WatchKit App";
+		};
+		1AEDA10D2587821C00121C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AEDA0822587782800121C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AEDA10A2587821C00121C5B;
+			remoteInfo = "Tina-SPM-Demo-watchos WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AEDA11F2587821C00121C5B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1AEDA10C2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA1232587821C00121C5B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1AEDA0FD2587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1AEDA08A2587782800121C5B /* Tina-SPM-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tina-SPM-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEDA08D2587782800121C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AEDA08F2587782800121C5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1AEDA0912587782800121C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AEDA0942587782800121C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AEDA0962587782800121C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AEDA0992587782800121C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AEDA09B2587782800121C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEDA0A72587813900121C5B /* GetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
+		1AEDA0A82587813900121C5B /* BinTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinTest.swift; sourceTree = "<group>"; };
+		1AEDA0A92587813900121C5B /* Binable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binable.swift; sourceTree = "<group>"; };
+		1AEDA0AA2587813900121C5B /* HeadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadRequest.swift; sourceTree = "<group>"; };
+		1AEDA0AB2587813900121C5B /* PostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		1AEDA0B62587817000121C5B /* Tina-SPM-Demo-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tina-SPM-Demo-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEDA0B82587817100121C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AEDA0BA2587817100121C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AEDA0BC2587817100121C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AEDA0BF2587817100121C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AEDA0C12587817100121C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEDA0C22587817100121C5B /* Tina_SPM_Demo_macos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tina_SPM_Demo_macos.entitlements; sourceTree = "<group>"; };
+		1AEDA0D8258781E800121C5B /* Tina-SPM-Demo-tvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tina-SPM-Demo-tvos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEDA0DA258781E800121C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AEDA0DC258781E800121C5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AEDA0DF258781E800121C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AEDA0E1258781E800121C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AEDA0E4258781E800121C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AEDA0E6258781E800121C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEDA0F92587821B00121C5B /* Tina-SPM-Demo-watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tina-SPM-Demo-watchos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEDA0FC2587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tina-SPM-Demo-watchos WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEDA1022587821B00121C5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1AEDA1042587821B00121C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AEDA1062587821B00121C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEDA10B2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tina-SPM-Demo-watchos WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEDA1102587821C00121C5B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1AEDA1122587821C00121C5B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1AEDA1142587821C00121C5B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1AEDA1162587821C00121C5B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		1AEDA1182587821C00121C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AEDA11A2587821C00121C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEDA11B2587821C00121C5B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AEDA0872587782800121C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA0A42587811100121C5B /* Tina in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA0B32587817000121C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA0D1258781C400121C5B /* Tina in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA0D5258781E800121C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA0EE258781F000121C5B /* Tina in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA1082587821C00121C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA1392587822E00121C5B /* Tina in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AEDA0812587782800121C5B = {
+			isa = PBXGroup;
+			children = (
+				1AEDA0A62587813900121C5B /* Bin */,
+				1AEDA08C2587782800121C5B /* Tina-SPM-Demo */,
+				1AEDA0B72587817100121C5B /* Tina-SPM-Demo-macos */,
+				1AEDA0D9258781E800121C5B /* Tina-SPM-Demo-tvos */,
+				1AEDA1002587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App */,
+				1AEDA10F2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension */,
+				1AEDA08B2587782800121C5B /* Products */,
+				1AEDA0CF258781C400121C5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AEDA08B2587782800121C5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AEDA08A2587782800121C5B /* Tina-SPM-Demo.app */,
+				1AEDA0B62587817000121C5B /* Tina-SPM-Demo-macos.app */,
+				1AEDA0D8258781E800121C5B /* Tina-SPM-Demo-tvos.app */,
+				1AEDA0F92587821B00121C5B /* Tina-SPM-Demo-watchos.app */,
+				1AEDA0FC2587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App.app */,
+				1AEDA10B2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AEDA08C2587782800121C5B /* Tina-SPM-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				1AEDA08D2587782800121C5B /* AppDelegate.swift */,
+				1AEDA08F2587782800121C5B /* SceneDelegate.swift */,
+				1AEDA0912587782800121C5B /* ViewController.swift */,
+				1AEDA0932587782800121C5B /* Main.storyboard */,
+				1AEDA0962587782800121C5B /* Assets.xcassets */,
+				1AEDA0982587782800121C5B /* LaunchScreen.storyboard */,
+				1AEDA09B2587782800121C5B /* Info.plist */,
+			);
+			path = "Tina-SPM-Demo";
+			sourceTree = "<group>";
+		};
+		1AEDA0A62587813900121C5B /* Bin */ = {
+			isa = PBXGroup;
+			children = (
+				1AEDA0A72587813900121C5B /* GetRequest.swift */,
+				1AEDA0A82587813900121C5B /* BinTest.swift */,
+				1AEDA0A92587813900121C5B /* Binable.swift */,
+				1AEDA0AA2587813900121C5B /* HeadRequest.swift */,
+				1AEDA0AB2587813900121C5B /* PostRequest.swift */,
+			);
+			path = Bin;
+			sourceTree = "<group>";
+		};
+		1AEDA0B72587817100121C5B /* Tina-SPM-Demo-macos */ = {
+			isa = PBXGroup;
+			children = (
+				1AEDA0B82587817100121C5B /* AppDelegate.swift */,
+				1AEDA0BA2587817100121C5B /* ViewController.swift */,
+				1AEDA0BC2587817100121C5B /* Assets.xcassets */,
+				1AEDA0BE2587817100121C5B /* Main.storyboard */,
+				1AEDA0C12587817100121C5B /* Info.plist */,
+				1AEDA0C22587817100121C5B /* Tina_SPM_Demo_macos.entitlements */,
+			);
+			path = "Tina-SPM-Demo-macos";
+			sourceTree = "<group>";
+		};
+		1AEDA0CF258781C400121C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AEDA0D9258781E800121C5B /* Tina-SPM-Demo-tvos */ = {
+			isa = PBXGroup;
+			children = (
+				1AEDA0DA258781E800121C5B /* AppDelegate.swift */,
+				1AEDA0DC258781E800121C5B /* ViewController.swift */,
+				1AEDA0DE258781E800121C5B /* Main.storyboard */,
+				1AEDA0E1258781E800121C5B /* Assets.xcassets */,
+				1AEDA0E3258781E800121C5B /* LaunchScreen.storyboard */,
+				1AEDA0E6258781E800121C5B /* Info.plist */,
+			);
+			path = "Tina-SPM-Demo-tvos";
+			sourceTree = "<group>";
+		};
+		1AEDA1002587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1AEDA1012587821B00121C5B /* Interface.storyboard */,
+				1AEDA1042587821B00121C5B /* Assets.xcassets */,
+				1AEDA1062587821B00121C5B /* Info.plist */,
+			);
+			path = "Tina-SPM-Demo-watchos WatchKit App";
+			sourceTree = "<group>";
+		};
+		1AEDA10F2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1AEDA1102587821C00121C5B /* InterfaceController.swift */,
+				1AEDA1122587821C00121C5B /* ExtensionDelegate.swift */,
+				1AEDA1142587821C00121C5B /* NotificationController.swift */,
+				1AEDA1162587821C00121C5B /* ComplicationController.swift */,
+				1AEDA1182587821C00121C5B /* Assets.xcassets */,
+				1AEDA11A2587821C00121C5B /* Info.plist */,
+				1AEDA11B2587821C00121C5B /* PushNotificationPayload.apns */,
+			);
+			path = "Tina-SPM-Demo-watchos WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AEDA0892587782800121C5B /* Tina-SPM-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEDA09E2587782800121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo" */;
+			buildPhases = (
+				1AEDA0862587782800121C5B /* Sources */,
+				1AEDA0872587782800121C5B /* Frameworks */,
+				1AEDA0882587782800121C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tina-SPM-Demo";
+			packageProductDependencies = (
+				1AEDA0A32587811100121C5B /* Tina */,
+			);
+			productName = "Tina-SPM-Demo";
+			productReference = 1AEDA08A2587782800121C5B /* Tina-SPM-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AEDA0B52587817000121C5B /* Tina-SPM-Demo-macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEDA0C32587817100121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-macos" */;
+			buildPhases = (
+				1AEDA0B22587817000121C5B /* Sources */,
+				1AEDA0B32587817000121C5B /* Frameworks */,
+				1AEDA0B42587817000121C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tina-SPM-Demo-macos";
+			packageProductDependencies = (
+				1AEDA0D0258781C400121C5B /* Tina */,
+			);
+			productName = "Tina-SPM-Demo-macos";
+			productReference = 1AEDA0B62587817000121C5B /* Tina-SPM-Demo-macos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AEDA0D7258781E800121C5B /* Tina-SPM-Demo-tvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEDA0E7258781E800121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-tvos" */;
+			buildPhases = (
+				1AEDA0D4258781E800121C5B /* Sources */,
+				1AEDA0D5258781E800121C5B /* Frameworks */,
+				1AEDA0D6258781E800121C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tina-SPM-Demo-tvos";
+			packageProductDependencies = (
+				1AEDA0ED258781F000121C5B /* Tina */,
+			);
+			productName = "Tina-SPM-Demo-tvos";
+			productReference = 1AEDA0D8258781E800121C5B /* Tina-SPM-Demo-tvos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AEDA0F82587821B00121C5B /* Tina-SPM-Demo-watchos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEDA1242587821C00121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-watchos" */;
+			buildPhases = (
+				1AEDA0F72587821B00121C5B /* Resources */,
+				1AEDA1232587821C00121C5B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AEDA0FF2587821B00121C5B /* PBXTargetDependency */,
+			);
+			name = "Tina-SPM-Demo-watchos";
+			productName = "Tina-SPM-Demo-watchos";
+			productReference = 1AEDA0F92587821B00121C5B /* Tina-SPM-Demo-watchos.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		1AEDA0FB2587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEDA1202587821C00121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-watchos WatchKit App" */;
+			buildPhases = (
+				1AEDA0FA2587821B00121C5B /* Resources */,
+				1AEDA11F2587821C00121C5B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AEDA10E2587821C00121C5B /* PBXTargetDependency */,
+			);
+			name = "Tina-SPM-Demo-watchos WatchKit App";
+			productName = "Tina-SPM-Demo-watchos WatchKit App";
+			productReference = 1AEDA0FC2587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1AEDA10A2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEDA11C2587821C00121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-watchos WatchKit Extension" */;
+			buildPhases = (
+				1AEDA1072587821C00121C5B /* Sources */,
+				1AEDA1082587821C00121C5B /* Frameworks */,
+				1AEDA1092587821C00121C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tina-SPM-Demo-watchos WatchKit Extension";
+			packageProductDependencies = (
+				1AEDA1382587822E00121C5B /* Tina */,
+			);
+			productName = "Tina-SPM-Demo-watchos WatchKit Extension";
+			productReference = 1AEDA10B2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AEDA0822587782800121C5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1AEDA0892587782800121C5B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1AEDA0B52587817000121C5B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1AEDA0D7258781E800121C5B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1AEDA0F82587821B00121C5B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1AEDA0FB2587821B00121C5B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1AEDA10A2587821C00121C5B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 1AEDA0852587782800121C5B /* Build configuration list for PBXProject "Tina-SPM-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AEDA0812587782800121C5B;
+			packageReferences = (
+				1AEDA0A22587811100121C5B /* XCRemoteSwiftPackageReference "Tina" */,
+			);
+			productRefGroup = 1AEDA08B2587782800121C5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AEDA0892587782800121C5B /* Tina-SPM-Demo */,
+				1AEDA0B52587817000121C5B /* Tina-SPM-Demo-macos */,
+				1AEDA0D7258781E800121C5B /* Tina-SPM-Demo-tvos */,
+				1AEDA0F82587821B00121C5B /* Tina-SPM-Demo-watchos */,
+				1AEDA0FB2587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App */,
+				1AEDA10A2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AEDA0882587782800121C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA09A2587782800121C5B /* LaunchScreen.storyboard in Resources */,
+				1AEDA0972587782800121C5B /* Assets.xcassets in Resources */,
+				1AEDA0952587782800121C5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA0B42587817000121C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA0BD2587817100121C5B /* Assets.xcassets in Resources */,
+				1AEDA0C02587817100121C5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA0D6258781E800121C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA0E5258781E800121C5B /* LaunchScreen.storyboard in Resources */,
+				1AEDA0E2258781E800121C5B /* Assets.xcassets in Resources */,
+				1AEDA0E0258781E800121C5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA0F72587821B00121C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA0FA2587821B00121C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA1052587821B00121C5B /* Assets.xcassets in Resources */,
+				1AEDA1032587821B00121C5B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA1092587821C00121C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA1192587821C00121C5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AEDA0862587782800121C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA0AC2587813900121C5B /* GetRequest.swift in Sources */,
+				1AEDA0AD2587813900121C5B /* BinTest.swift in Sources */,
+				1AEDA0AF2587813900121C5B /* HeadRequest.swift in Sources */,
+				1AEDA0B02587813900121C5B /* PostRequest.swift in Sources */,
+				1AEDA0922587782800121C5B /* ViewController.swift in Sources */,
+				1AEDA0AE2587813900121C5B /* Binable.swift in Sources */,
+				1AEDA08E2587782800121C5B /* AppDelegate.swift in Sources */,
+				1AEDA0902587782800121C5B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA0B22587817000121C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA0C82587818900121C5B /* Binable.swift in Sources */,
+				1AEDA0CC2587818900121C5B /* PostRequest.swift in Sources */,
+				1AEDA0CA2587818900121C5B /* GetRequest.swift in Sources */,
+				1AEDA0BB2587817100121C5B /* ViewController.swift in Sources */,
+				1AEDA0B92587817100121C5B /* AppDelegate.swift in Sources */,
+				1AEDA0C92587818900121C5B /* HeadRequest.swift in Sources */,
+				1AEDA0CB2587818900121C5B /* BinTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA0D4258781E800121C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA0EF258781F400121C5B /* Binable.swift in Sources */,
+				1AEDA0F3258781F400121C5B /* BinTest.swift in Sources */,
+				1AEDA0F2258781F400121C5B /* PostRequest.swift in Sources */,
+				1AEDA0F1258781F400121C5B /* GetRequest.swift in Sources */,
+				1AEDA0DD258781E800121C5B /* ViewController.swift in Sources */,
+				1AEDA0DB258781E800121C5B /* AppDelegate.swift in Sources */,
+				1AEDA0F0258781F400121C5B /* HeadRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEDA1072587821C00121C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEDA1152587821C00121C5B /* NotificationController.swift in Sources */,
+				1AEDA12F2587822300121C5B /* BinTest.swift in Sources */,
+				1AEDA1172587821C00121C5B /* ComplicationController.swift in Sources */,
+				1AEDA12D2587822300121C5B /* PostRequest.swift in Sources */,
+				1AEDA1132587821C00121C5B /* ExtensionDelegate.swift in Sources */,
+				1AEDA1312587822300121C5B /* GetRequest.swift in Sources */,
+				1AEDA1302587822300121C5B /* Binable.swift in Sources */,
+				1AEDA1112587821C00121C5B /* InterfaceController.swift in Sources */,
+				1AEDA12E2587822300121C5B /* HeadRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AEDA0FF2587821B00121C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AEDA0FB2587821B00121C5B /* Tina-SPM-Demo-watchos WatchKit App */;
+			targetProxy = 1AEDA0FE2587821B00121C5B /* PBXContainerItemProxy */;
+		};
+		1AEDA10E2587821C00121C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AEDA10A2587821C00121C5B /* Tina-SPM-Demo-watchos WatchKit Extension */;
+			targetProxy = 1AEDA10D2587821C00121C5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AEDA0932587782800121C5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEDA0942587782800121C5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AEDA0982587782800121C5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEDA0992587782800121C5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1AEDA0BE2587817100121C5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEDA0BF2587817100121C5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AEDA0DE258781E800121C5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEDA0DF258781E800121C5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AEDA0E3258781E800121C5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEDA0E4258781E800121C5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1AEDA1012587821B00121C5B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEDA1022587821B00121C5B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AEDA09C2587782800121C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AEDA09D2587782800121C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AEDA09F2587782800121C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				INFOPLIST_FILE = "Tina-SPM-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AEDA0A02587782800121C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				INFOPLIST_FILE = "Tina-SPM-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1AEDA0C42587817100121C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tina-SPM-Demo-macos/Tina_SPM_Demo_macos.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Tina-SPM-Demo-macos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-macos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1AEDA0C52587817100121C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tina-SPM-Demo-macos/Tina_SPM_Demo_macos.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Tina-SPM-Demo-macos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-macos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1AEDA0E8258781E800121C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				INFOPLIST_FILE = "Tina-SPM-Demo-tvos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+			};
+			name = Debug;
+		};
+		1AEDA0E9258781E800121C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				INFOPLIST_FILE = "Tina-SPM-Demo-tvos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.2;
+			};
+			name = Release;
+		};
+		1AEDA11D2587821C00121C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				INFOPLIST_FILE = "Tina-SPM-Demo-watchos WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-watchos.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		1AEDA11E2587821C00121C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				INFOPLIST_FILE = "Tina-SPM-Demo-watchos WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-watchos.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		1AEDA1212587821C00121C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				IBSC_MODULE = Tina_SPM_Demo_watchos_WatchKit_Extension;
+				INFOPLIST_FILE = "Tina-SPM-Demo-watchos WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-watchos.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Debug;
+		};
+		1AEDA1222587821C00121C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				IBSC_MODULE = Tina_SPM_Demo_watchos_WatchKit_Extension;
+				INFOPLIST_FILE = "Tina-SPM-Demo-watchos WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-watchos.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
+			};
+			name = Release;
+		};
+		1AEDA1252587821C00121C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-watchos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1AEDA1262587821C00121C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3F47987WD3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lshxin.Tina-SPM-Demo-watchos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AEDA0852587782800121C5B /* Build configuration list for PBXProject "Tina-SPM-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEDA09C2587782800121C5B /* Debug */,
+				1AEDA09D2587782800121C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEDA09E2587782800121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEDA09F2587782800121C5B /* Debug */,
+				1AEDA0A02587782800121C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEDA0C32587817100121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEDA0C42587817100121C5B /* Debug */,
+				1AEDA0C52587817100121C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEDA0E7258781E800121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEDA0E8258781E800121C5B /* Debug */,
+				1AEDA0E9258781E800121C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEDA11C2587821C00121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-watchos WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEDA11D2587821C00121C5B /* Debug */,
+				1AEDA11E2587821C00121C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEDA1202587821C00121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-watchos WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEDA1212587821C00121C5B /* Debug */,
+				1AEDA1222587821C00121C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEDA1242587821C00121C5B /* Build configuration list for PBXNativeTarget "Tina-SPM-Demo-watchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEDA1252587821C00121C5B /* Debug */,
+				1AEDA1262587821C00121C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1AEDA0A22587811100121C5B /* XCRemoteSwiftPackageReference "Tina" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KKLater/Tina.git";
+			requirement = {
+				branch = dev;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1AEDA0A32587811100121C5B /* Tina */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AEDA0A22587811100121C5B /* XCRemoteSwiftPackageReference "Tina" */;
+			productName = Tina;
+		};
+		1AEDA0D0258781C400121C5B /* Tina */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AEDA0A22587811100121C5B /* XCRemoteSwiftPackageReference "Tina" */;
+			productName = Tina;
+		};
+		1AEDA0ED258781F000121C5B /* Tina */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AEDA0A22587811100121C5B /* XCRemoteSwiftPackageReference "Tina" */;
+			productName = Tina;
+		};
+		1AEDA1382587822E00121C5B /* Tina */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AEDA0A22587811100121C5B /* XCRemoteSwiftPackageReference "Tina" */;
+			productName = Tina;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1AEDA0822587782800121C5B /* Project object */;
+}

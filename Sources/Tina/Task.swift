@@ -62,10 +62,6 @@ extension Task {
         if let tPath = request.path {
             url.append("/\(tPath)")
         }
-        if let tQuery = request.queryParameters {
-            let queryString = tQuery.queryFormatted()
-            url.append("?\(queryString)")
-        }
         return url
     }
     
