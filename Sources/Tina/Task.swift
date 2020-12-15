@@ -120,8 +120,9 @@ extension Task {
                 }
             }
             
-            
-            completion?(res)
+            if con == true {
+                completion?(res)
+            }
         }
     }
 
