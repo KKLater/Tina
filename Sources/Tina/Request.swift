@@ -321,7 +321,9 @@ public extension Traceable {
 
 public typealias CompletionClosure =  (_ response: Response) -> Void
 
-public class Request: Equatable {
+@objcMembers
+@objc(TinaRequest)
+open class Request: NSObject {
         
     init(host: String) {
         self.host = host
@@ -350,6 +352,12 @@ extension Request {
     /// Returns a Boolean value indicating whether two values are equal.
     public static func == (lhs: Request, rhs: Request) -> Bool {
         return lhs.afRequest?.id == rhs.afRequest?.id
+    }
+}
+
+public extension Request {
+    func cancel() {
+        Session.shared.cancel(self)
     }
 }
 

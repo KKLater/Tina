@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "repositoryURL": "git@gitlab.renrenche.com:iOSVendor/Alamofire.git",
         "state": {
           "branch": null,
           "revision": "9e0328127dfb801cefe8ac53a13c0c90a7770448",
