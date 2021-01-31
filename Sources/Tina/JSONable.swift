@@ -29,6 +29,7 @@
 
 
 import Foundation
+import SmartCodable
 
 public protocol JSONable: Codable {
     func jsonString() -> String?
@@ -78,9 +79,8 @@ public extension JSONable {
             print("\(Self.Type.self) Entity 转换失败")
             return nil
         }
-        let decoder = JSONDecoder()
         do {
-            let model = try decoder.decode(Self.self, from: data)
+            let model = try data.decoded() as Self
             return model
         } catch {
             print(error)

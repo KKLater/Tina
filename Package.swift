@@ -10,10 +10,12 @@ let package = Package(
         .library(name: "Tina", targets: ["Tina"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.4.0"))
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.4.0")),
+        .package(url: "https://github.com/KKLater/SmartCodable.git", .upToNextMajor(from: "0.0.1"))
+
     ],
     targets: [
-        .target(name: "Tina", dependencies: ["Alamofire"]),
+        .target(name: "Tina", dependencies: ["Alamofire", "SmartCodable"]),
         .testTarget(name: "TinaTests", dependencies: ["Tina"]),
     ]
 )
