@@ -82,7 +82,7 @@ public class Session {
             tHeader = HTTPHeaders(tHeaders)
         }
 
-        let afRequest = sessionManager.request(tUrl, method: tMethod, parameters: tParameters, headers: tHeader).responseJSON { [unowned self] (dataResponse) in
+        let afRequest = sessionManager.request(tUrl, method: tMethod, parameters: tParameters, headers: tHeader).validate().responseJSON { [unowned self] (dataResponse) in
             var response = Response()
 
             response.afResponse = dataResponse
