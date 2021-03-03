@@ -11,7 +11,9 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.4.0")),
-        .package(url: "https://github.com/KKLater/SmartCodable.git", .upToNextMajor(from: "0.0.1"))
+//        .package(url: "https://github.com/KKLater/SmartCodable.git", .upToNextMajor(from: "0.0.1"))
+        .package(url: "https://github.com/KKLater/SmartCodable.git", .branch("dev"))
+
 
     ],
     targets: [
