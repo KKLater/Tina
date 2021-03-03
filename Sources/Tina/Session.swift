@@ -86,9 +86,6 @@ public class Session {
         if NetworkReachabilityManager.default?.isReachable == false {
             var response = Response()
             response.error = Tina.NetReachabilityError.unReachable
-            if let index = tasks.firstIndex(of: task) {
-                tasks.remove(at: index)
-            }
             completionHandler(response)
             return
         }
