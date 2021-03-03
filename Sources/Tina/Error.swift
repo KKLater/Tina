@@ -35,6 +35,10 @@ struct Tina {
         case requestEmptyError
     }
     
+    enum NetReachabilityError: Error {
+        case unReachable
+    }
+
     enum ResponseError: Error {
 
     }
