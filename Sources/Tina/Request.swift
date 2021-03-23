@@ -44,7 +44,7 @@ public protocol Requestable: JSONable {
     
     /// 请求header信息
     var header: Header? { get }
-    
+        
     /// 请求响应链
     var requestHandlers: [RequestHandleable]? { get }
     
@@ -54,7 +54,7 @@ public protocol Requestable: JSONable {
     /// 请求发起前的校验
     func validate() -> Error?
     
-    /// 配置星球
+    /// 配置请求
     func configRequest() -> Request?
     
 }
@@ -67,6 +67,8 @@ public extension Requestable {
     var header: Header? { nil }
     var requestHandlers: [RequestHandleable]? { nil }
     var responseHandlers: [ResponseHandleable]? { nil }
+    
+
     
     func parameters() -> Parameters {
         if let dic = jsonDictionary() {
@@ -116,8 +118,10 @@ public extension Requestable where Self: Sessionable {
         /// bodyParameters
         switch method {
         case .get, .delete, .head:
+            request.parameters = parameters()
             request.queryParameters = parameters()
         case .connect, .put, .post, .patch, .options, .trace:
+            request.parameters = parameters()
             request.bodyParameters = parameters()
         }
     
@@ -331,6 +335,7 @@ open class Request: NSObject {
     
     public var host: String
     public var path: String?
+    public var parameters: Parameters?
     public var queryParameters: Parameters?
     public var bodyParameters: Parameters?
     public var method: Method = .get
