@@ -44,7 +44,7 @@ public protocol Requestable: JSONable {
     
     /// 请求header信息
     var header: Header? { get }
-        
+    
     /// 请求响应链
     var requestHandlers: [RequestHandleable]? { get }
     
@@ -54,7 +54,7 @@ public protocol Requestable: JSONable {
     /// 请求发起前的校验
     func validate() -> Error?
     
-    /// 配置请求
+    /// 配置星球
     func configRequest() -> Request?
     
 }
@@ -67,8 +67,6 @@ public extension Requestable {
     var header: Header? { nil }
     var requestHandlers: [RequestHandleable]? { nil }
     var responseHandlers: [ResponseHandleable]? { nil }
-    
-
     
     func parameters() -> Parameters {
         if let dic = jsonDictionary() {
