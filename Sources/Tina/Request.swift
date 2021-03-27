@@ -116,8 +116,10 @@ public extension Requestable where Self: Sessionable {
         /// bodyParameters
         switch method {
         case .get, .delete, .head:
+            request.parameters = parameters()
             request.queryParameters = parameters()
         case .connect, .put, .post, .patch, .options, .trace:
+            request.parameters = parameters()
             request.bodyParameters = parameters()
         }
     
@@ -331,6 +333,7 @@ open class Request: NSObject {
     
     public var host: String
     public var path: String?
+    public var parameters: Parameters?
     public var queryParameters: Parameters?
     public var bodyParameters: Parameters?
     public var method: Method = .get

@@ -58,7 +58,7 @@ public class Session {
     private(set) var tasks = [Task]()
     
     var sessionManager: Alamofire.Session!
-    
+        
     init() {
         let config = URLSessionConfiguration.af.default
         config.timeoutIntervalForRequest = 20
@@ -82,7 +82,16 @@ public class Session {
             tHeader = HTTPHeaders(tHeaders)
         }
 
-        let afRequest = sessionManager.request(tUrl, method: tMethod, parameters: tParameters, headers: tHeader).responseJSON { [unowned self] (dataResponse) in
+        /// 网络连接错误
+        if NetworkReachabilityManager.default?.isReachable == false {
+            var response = Response()
+            response.error = Tina.NetReachabilityError.unReachable
+            completionHandler(response)
+            return
+        }
+        
+        /// 发起网络请求
+        let afRequest = sessionManager.request(tUrl, method: tMethod, parameters: tParameters, headers: tHeader).validate().responseJSON { [unowned self] (dataResponse) in
             var response = Response()
 
             response.afResponse = dataResponse
