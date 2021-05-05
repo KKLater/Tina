@@ -29,7 +29,6 @@
 
 
 import Foundation
-import Alamofire
 
 public protocol Requestable: JSONable {
     
@@ -42,9 +41,15 @@ public protocol Requestable: JSONable {
     /// 请求方法
     var method: Method { get }
     
+    /// 超时
+    var timeoutIntervalForRequest: TimeInterval { get }
+    
+    /// 超时
+    var timeoutIntervalForResource: TimeInterval { get }
+    
     /// 请求header信息
     var header: Header? { get }
-    
+
     /// 请求响应链
     var requestHandlers: [RequestHandleable]? { get }
     
@@ -64,9 +69,12 @@ public extension Requestable {
     var host: String? { nil }
     var path: String? { nil }
     var method: Method { .get }
+    var timeoutIntervalForRequest: TimeInterval { 20 }
+    var timeoutIntervalForResource: TimeInterval { 20 }
     var header: Header? { nil }
     var requestHandlers: [RequestHandleable]? { nil }
     var responseHandlers: [ResponseHandleable]? { nil }
+    
     
     func parameters() -> Parameters {
         if let dic = jsonDictionary() {
@@ -74,25 +82,16 @@ public extension Requestable {
         }
         return [:]
     }
-    func configRequest() -> Request? {
-        return nil
-    }
-}
-
-public extension Requestable {
+    
     func validate() -> Error? {
         guard let _ = host else {
             return Tina.RequestError.hostEmptyError(self)
         }
         return nil
     }
-}
-
-
-
-public extension Requestable where Self: Sessionable {
+    
     func configRequest() -> Request? {
-        guard let host = host ?? Self.host() else {
+        guard let host = host else {
             return nil
         }
         
@@ -112,43 +111,10 @@ public extension Requestable where Self: Sessionable {
         /// method
         request.method = method
         
-        /// queryParameters
-        /// bodyParameters
-        switch method {
-        case .get, .delete, .head:
-            request.parameters = parameters()
-            request.queryParameters = parameters()
-        case .connect, .put, .post, .patch, .options, .trace:
-            request.parameters = parameters()
-            request.bodyParameters = parameters()
-        }
-    
-        /// requestHandlers
-        var allRequestHandlers = Self.requestHandlers()
-        if let tHandlers = requestHandlers {
-            allRequestHandlers += tHandlers
-        }
-        request.requestHandlers = allRequestHandlers
-        
-        /// responseHandlers
-        var allResponseHandlers = Self.responseHandlers()
-        if let tHandlers = responseHandlers {
-            allResponseHandlers += tHandlers
-        }
-        request.responseHandlers = allResponseHandlers
-        
-        /// session
-        request.session = Session.shared
+        /// parameters
+        request.parameters = parameters()
 
         return request
-    }
-    
-    func validate() -> Error? {
-        guard let _ = host ?? Self.host() else {
-            return Tina.RequestError.hostEmptyError(self)
-        }
- 
-        return nil
     }
 }
 
@@ -164,14 +130,8 @@ public extension Requestable {
             completion(response)
             return nil
         }
-  
-        guard let request = configRequest() else {
-            response.error = Tina.RequestError.requestEmptyError
-            completion(response)
-            return nil
-        }
-         
-        let task = Task(request: request)
+        
+        let task = Task(context: self)
         task.completion = completion
         return task.fetch()        
     }
@@ -339,14 +299,11 @@ open class Request: NSObject {
     public var method: Method = .get
     public var headers: Headers?
     
-    public var requestHandlers: [RequestHandleable]?
-    public var responseHandlers: [ResponseHandleable]?
-    
-    public var session: Session?
-    
-    public var request: URLRequest?
-    public var afRequest: Alamofire.Request?
-    
+//    public var session: Session?
+//
+//    public var request: URLRequest?
+//    public var afRequest: Alamofire.Request?
+//
     public weak var task: Task?
 }
 
@@ -354,7 +311,7 @@ open class Request: NSObject {
 extension Request {
     /// Returns a Boolean value indicating whether two values are equal.
     public static func == (lhs: Request, rhs: Request) -> Bool {
-        return lhs.afRequest?.id == rhs.afRequest?.id
+        return lhs.task?.afRequest?.id == rhs.task?.afRequest?.id
     }
 }
 

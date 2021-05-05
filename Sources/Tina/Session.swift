@@ -31,23 +31,7 @@
 import Foundation
 import Alamofire
 
-public protocol Sessionable {
-    /// 服务器域名地址
-    ///
-    /// 请求的服务器域名地址
-    ///
-    /// - returns: 配置所有请求的请求域名地址
-    ///
-    /// - Note: 此处配置请求的域名地址，Network 发起请求时，域名全部为该处配置的域名；不同域名的请求，可以由不同的 Network 实例操作
-    ///
-    static func host() -> String?
-    
-    /// 请求适配器响应链
-    static func requestHandlers() -> [RequestHandleable]
-    
-    /// 请求结果适配器响应链
-    static func responseHandlers() -> [ResponseHandleable]
-}
+public protocol Sessionable {}
 
 public class Session {
     
@@ -72,7 +56,6 @@ public class Session {
     ///   - completionHandler: 请求回调
     public func execute(_ task: Task, completionHandler: @escaping (Response) -> Void) {
         let requst = task.request
-      
         let tUrl = task.url()
         let tMethod = self.method(requst.method)
         let tParameters = task.parameters()
@@ -89,6 +72,9 @@ public class Session {
             completionHandler(response)
             return
         }
+        
+        sessionManager.sessionConfiguration.timeoutIntervalForRequest = task.requestContext?.timeoutIntervalForRequest ?? 20
+        sessionManager.sessionConfiguration.timeoutIntervalForResource = task.requestContext?.timeoutIntervalForResource ?? 20
         
         /// 发起网络请求
         let afRequest = sessionManager.request(tUrl, method: tMethod, parameters: tParameters, headers: tHeader).validate().responseJSON { [unowned self] (dataResponse) in
@@ -114,7 +100,7 @@ public class Session {
             completionHandler(response)
 
         }
-        task.request.afRequest = afRequest
+        task.afRequest = afRequest
         tasks.append(task)
 
     }
@@ -138,7 +124,7 @@ public class Session {
         
         if let sessionTask =  needRemoveTask{
             if let index = tasks.firstIndex(of: sessionTask) {
-                sessionTask.request.afRequest?.cancel()
+                sessionTask.afRequest?.cancel()
                 tasks.remove(at: index)
             }
         }

@@ -29,17 +29,24 @@
 
 
 import Foundation
+import Alamofire
 
 public class Task: Equatable {
     
-    init(request: Request) {
-        self.request = request
-        request.task = self
-    }
+    public var requestHandlers: [RequestHandleable]?
+    public var responseHandlers: [ResponseHandleable]?
     
-    public var request: Request
+    
+    init(context: Requestable) {
+        self.requestContext = context
+    }
+    public var requestContext: Requestable?
+    public var request: Request = Request(host: "")
     public var response: Response?
     public var completion: CompletionClosure?
+    
+    public var urlRequest: URLRequest?
+    public var afRequest: Alamofire.Request?
 }
 public extension Task {
     static func == (lhs: Task, rhs: Task) -> Bool {
@@ -51,9 +58,20 @@ public extension Task {
 extension Task {
     
     @discardableResult
-    public func fetch() -> Request {
+    public func fetch() -> Request? {
         
-        if let handlers = request.requestHandlers {
+        guard let rq = requestContext?.configRequest() else {
+            print("Config Request fialed")
+            return nil
+        }
+        
+        request = rq
+        request.task = self
+        requestHandlers = requestContext?.requestHandlers
+        responseHandlers = requestContext?.responseHandlers
+        
+        
+        if let handlers = requestHandlers {
             var con = true
             var error: Error?
             for handler in handlers {
@@ -72,7 +90,7 @@ extension Task {
         }
         
         
-        request.session?.execute(self) { (response) in
+        Session.shared.execute(self) { (response) in
             self.handle(response)
         }
 
@@ -89,20 +107,13 @@ extension Task {
     }
     
     func parameters() -> Parameters? {
-        var parameters: Parameters?
-        switch request.method {
-        case .get, .delete, .head:
-            parameters = request.queryParameters
-        case .connect, .put, .post, .patch, .options, .trace:
-            parameters = request.bodyParameters
-        }
-        return parameters
+        return request.parameters
     }
     
     private func handle(_ response: Response) {
         var res = response
         res.task = self
-        if let handlers = request.responseHandlers {
+        if let handlers = responseHandlers {
             var con = true
             var error: Error?
             for handle in handlers {

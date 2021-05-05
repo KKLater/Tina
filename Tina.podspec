@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Tina"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "A request fonundation with Swift for mac、ios、watchos、tvos."
 
   s.description  = <<-DESC
