@@ -77,7 +77,8 @@ public class Session {
         sessionManager.sessionConfiguration.timeoutIntervalForResource = task.requestContext?.timeoutIntervalForResource ?? 20
         
         /// 发起网络请求
-        let afRequest = sessionManager.request(tUrl, method: tMethod, parameters: tParameters, headers: tHeader).validate().responseJSON { [unowned self] (dataResponse) in
+        let afRequest = sessionManager.request(tUrl, method: tMethod, parameters: tParameters, headers: tHeader).validate().responseJSON { [weak self] (dataResponse) in
+            guard let sSelf = self else { return }
             var response = Response()
 
             response.afResponse = dataResponse
@@ -94,8 +95,8 @@ public class Session {
             task.response = response
             response.task = task
             
-            if let index = tasks.firstIndex(of: task) {
-                tasks.remove(at: index)
+            if let index = sSelf.tasks.firstIndex(of: task) {
+                sSelf.tasks.remove(at: index)
             }
             completionHandler(response)
 

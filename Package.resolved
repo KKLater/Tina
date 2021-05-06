@@ -14,9 +14,9 @@
         "package": "SmartCodable",
         "repositoryURL": "https://github.com/KKLater/SmartCodable.git",
         "state": {
-          "branch": "dev",
+          "branch": null,
           "revision": "51003c8943954a589edfeb0f06d3020645c8c482",
-          "version": null
+          "version": "0.0.2"
         }
       }
     ]
